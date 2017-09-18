@@ -1,0 +1,18 @@
+#MMLS read test
+echo 0 > /sys/kernel/debug/hvcmd_test/async
+echo 9 >/sys/kernel/debug/hvcmd_test/tag
+echo 8 >/sys/kernel/debug/hvcmd_test/sector
+echo 40 >/sys/kernel/debug/hvcmd_test/LBA
+echo 1 >/sys/kernel/debug/hvcmd_test/mmls_read
+cp /sys/kernel/debug/hvcmd_test/4k_file_out mmls_4k_out.txt
+
+#remove first 3 lines of every 4 lines
+cp /sys/kernel/debug/hvcmd_test/4k_file_in mmls_4k_in.txt
+awk 'NR%4==0' mmls_4k_out.txt > mmls_out.txt
+awk 'NR%4==0' mmls_4k_in.txt >mmls_in.txt
+
+#Compare MMLS read output to MMLS write input data
+meld mmls_4k_out.txt mmls_4k_in.txt &
+
+
+

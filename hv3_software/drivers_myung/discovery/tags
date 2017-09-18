@@ -1,0 +1,493 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A7MODE	hv_discovery.c	160;"	d	file:
+BROADWELL	hv_discovery.c	/^	BROADWELL,$/;"	e	enum:type	file:
+CHANNEL_UNSPECIFIED	hv_discovery.c	376;"	d	file:
+CHN_IDX_OFFSET	hv_discovery.c	314;"	d	file:
+COL_WIDTH_BITS	hv_discovery.c	307;"	d	file:
+DRAM_RULE_ENABLE	hv_discovery.c	159;"	d	file:
+DRIVER_NAME	hv_discovery.h	2;"	d
+E820_NVDIMM	hv_discovery.c	811;"	d	file:
+EDAC_DIMM_OFF	hv_discovery.h	41;"	d
+EDAC_MAX_LAYERS	hv_discovery.h	32;"	d
+EDAC_MOD_STR	hv_discovery.c	129;"	d	file:
+GENMASK_ULL	hv_discovery.h	80;"	d
+GET_BITFIELD	hv_discovery.c	135;"	d	file:
+GET_TOHM	hv_discovery.c	252;"	d	file:
+GET_TOLM	hv_discovery.c	251;"	d	file:
+HASWELL	hv_discovery.c	/^	HASWELL,$/;"	e	enum:type	file:
+HASWELL_DDRCRCLKCONTROLS	hv_discovery.c	593;"	d	file:
+HASWELL_HASYSDEFEATURE2	hv_discovery.c	594;"	d	file:
+HASWELL_TOHM_0	hv_discovery.c	245;"	d	file:
+HASWELL_TOHM_1	hv_discovery.c	246;"	d	file:
+HASWELL_TOLM	hv_discovery.c	244;"	d	file:
+HV_SIZE	hv_discovery.c	787;"	d	file:
+IB_RANK_CFG_A	hv_discovery.c	365;"	d	file:
+IS_CLOSE_PG	hv_discovery.c	288;"	d	file:
+IS_DIMM_PRESENT	hv_discovery.c	304;"	d	file:
+IS_ECC_ENABLED	hv_discovery.c	286;"	d	file:
+IS_LOCKSTEP_ENABLED	hv_discovery.c	287;"	d	file:
+IS_MIRROR_ENABLED	hv_discovery.c	293;"	d	file:
+IS_RIR_VALID	hv_discovery.c	322;"	d	file:
+IVY_BRIDGE	hv_discovery.c	/^	IVY_BRIDGE,$/;"	e	enum:type	file:
+KNIGHTS_LANDING	hv_discovery.c	/^	KNIGHTS_LANDING,$/;"	e	enum:type	file:
+KNL_CACHEABLE	hv_discovery.c	1281;"	d	file:
+KNL_CACHEABLE	hv_discovery.c	1287;"	d	file:
+KNL_EDC_ROUTE	hv_discovery.c	1274;"	d	file:
+KNL_EDRAM	hv_discovery.c	1278;"	d	file:
+KNL_EDRAM_ONLY	hv_discovery.c	1284;"	d	file:
+KNL_MAX_CHANNELS	hv_discovery.c	374;"	d	file:
+KNL_MAX_CHAS	hv_discovery.c	373;"	d	file:
+KNL_MAX_EDCS	hv_discovery.c	375;"	d	file:
+KNL_MCMTR	hv_discovery.c	284;"	d	file:
+KNL_MC_ROUTE	hv_discovery.c	1275;"	d	file:
+KNL_MOD3	hv_discovery.c	1290;"	d	file:
+KNL_TOHM_0	hv_discovery.c	248;"	d	file:
+KNL_TOHM_1	hv_discovery.c	249;"	d	file:
+KNL_TOLM	hv_discovery.c	247;"	d	file:
+MAX_CPU_NODES	hv_discovery.c	786;"	d	file:
+MAX_DIMMS	hv_discovery.c	372;"	d	file:
+MAX_HVDIMMS	hv_discovery.c	788;"	d	file:
+MAX_RIR_RANGES	hv_discovery.c	320;"	d	file:
+MAX_RIR_WAY	hv_discovery.c	325;"	d	file:
+MAX_TAD	hv_discovery.c	271;"	d	file:
+MCMTR	hv_discovery.c	283;"	d	file:
+MEM_DDR4	hv_discovery.h	58;"	d
+MEM_FLAG_DDR4	hv_discovery.h	61;"	d
+MEM_FLAG_RDDR4	hv_discovery.h	62;"	d
+MEM_RDDR4	hv_discovery.h	59;"	d
+MiB_TO_PAGES	hv_discovery.h	85;"	d
+MiB_TO_PAGES	hv_discovery.h	88;"	d
+NUM_CHANNELS	hv_discovery.c	371;"	d	file:
+ONE_WAY	hv_discovery.c	36;"	d	file:
+OP_ALLOC	hv_discovery.h	35;"	d
+OP_OFFLINE	hv_discovery.h	39;"	d
+OP_RUNNING_INTERRUPT	hv_discovery.h	37;"	d
+OP_RUNNING_POLL	hv_discovery.h	36;"	d
+OP_RUNNING_POLL_INTR	hv_discovery.h	38;"	d
+PAGES_TO_MiB	hv_discovery.h	84;"	d
+PAGES_TO_MiB	hv_discovery.h	87;"	d
+PCI_DESCR	hv_discovery.c	479;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_CBO_SAD0	hv_discovery.c	719;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_CBO_SAD1	hv_discovery.c	720;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_DDRIO0	hv_discovery.c	729;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA0	hv_discovery.c	713;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA0_TA	hv_discovery.c	715;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA0_TAD0	hv_discovery.c	721;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA0_TAD1	hv_discovery.c	722;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA0_TAD2	hv_discovery.c	723;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA0_TAD3	hv_discovery.c	724;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA0_THERMAL	hv_discovery.c	716;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA1	hv_discovery.c	714;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA1_TA	hv_discovery.c	717;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA1_TAD0	hv_discovery.c	725;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA1_TAD1	hv_discovery.c	726;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA1_TAD2	hv_discovery.c	727;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA1_TAD3	hv_discovery.c	728;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_HA1_THERMAL	hv_discovery.c	718;"	d	file:
+PCI_DEVICE_ID_INTEL_BROADWELL_IMC_VTD_MISC	hv_discovery.c	712;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_CBO_SAD0	hv_discovery.c	602;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_CBO_SAD1	hv_discovery.c	603;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_DDRIO0	hv_discovery.c	612;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_DDRIO1	hv_discovery.c	613;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_DDRIO2	hv_discovery.c	614;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_DDRIO3	hv_discovery.c	615;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA0	hv_discovery.c	596;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA0_TA	hv_discovery.c	598;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA0_TAD0	hv_discovery.c	604;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA0_TAD1	hv_discovery.c	605;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA0_TAD2	hv_discovery.c	606;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA0_TAD3	hv_discovery.c	607;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA0_THERMAL	hv_discovery.c	599;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA1	hv_discovery.c	597;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA1_TA	hv_discovery.c	600;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA1_TAD0	hv_discovery.c	608;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA1_TAD1	hv_discovery.c	609;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA1_TAD2	hv_discovery.c	610;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA1_TAD3	hv_discovery.c	611;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_HA1_THERMAL	hv_discovery.c	601;"	d	file:
+PCI_DEVICE_ID_INTEL_HASWELL_IMC_VTD_MISC	hv_discovery.c	595;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_BR0	hv_discovery.c	528;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_BR1	hv_discovery.c	529;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_1HA_DDRIO0	hv_discovery.c	516;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_2HA_DDRIO0	hv_discovery.c	517;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA0	hv_discovery.c	520;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA0_RAS	hv_discovery.c	522;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA0_TA	hv_discovery.c	521;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA0_TAD0	hv_discovery.c	523;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA0_TAD1	hv_discovery.c	524;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA0_TAD2	hv_discovery.c	525;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA0_TAD3	hv_discovery.c	526;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA1	hv_discovery.c	530;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA1_RAS	hv_discovery.c	532;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA1_TA	hv_discovery.c	531;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA1_TAD0	hv_discovery.c	533;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA1_TAD1	hv_discovery.c	534;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA1_TAD2	hv_discovery.c	535;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_IMC_HA1_TAD3	hv_discovery.c	536;"	d	file:
+PCI_DEVICE_ID_INTEL_IBRIDGE_SAD	hv_discovery.c	527;"	d	file:
+PCI_DEVICE_ID_INTEL_KNL_IMC_CHA	hv_discovery.c	668;"	d	file:
+PCI_DEVICE_ID_INTEL_KNL_IMC_CHANNEL	hv_discovery.c	660;"	d	file:
+PCI_DEVICE_ID_INTEL_KNL_IMC_MC	hv_discovery.c	658;"	d	file:
+PCI_DEVICE_ID_INTEL_KNL_IMC_SAD0	hv_discovery.c	664;"	d	file:
+PCI_DEVICE_ID_INTEL_KNL_IMC_SAD1	hv_discovery.c	666;"	d	file:
+PCI_DEVICE_ID_INTEL_KNL_IMC_TA	hv_discovery.c	662;"	d	file:
+PCI_DEVICE_ID_INTEL_KNL_IMC_TOLHM	hv_discovery.c	670;"	d	file:
+PCI_DEVICE_ID_INTEL_SBRIDGE_BR	hv_discovery.h	77;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_DDRIO	hv_discovery.h	75;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_ERR0	hv_discovery.h	65;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_ERR1	hv_discovery.h	66;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_ERR2	hv_discovery.h	67;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_ERR3	hv_discovery.h	68;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_HA0	hv_discovery.h	69;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_RAS	hv_discovery.h	64;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_TA	hv_discovery.h	70;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_TAD0	hv_discovery.h	71;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_TAD1	hv_discovery.h	72;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_TAD2	hv_discovery.h	73;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_IMC_TAD3	hv_discovery.h	74;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_SAD0	hv_discovery.h	76;"	d
+PCI_DEVICE_ID_INTEL_SBRIDGE_SAD1	hv_discovery.h	78;"	d
+PCI_ID_TABLE_ENTRY	hv_discovery.c	504;"	d	file:
+PDEBUG	hv_discovery.h	3;"	d
+PERR	hv_discovery.h	4;"	d
+PINFO	hv_discovery.h	5;"	d
+RANK_CNT_BITS	hv_discovery.c	305;"	d	file:
+RANK_DISABLE	hv_discovery.c	303;"	d	file:
+RANK_EVEN_ERR_CNT	hv_discovery.c	351;"	d	file:
+RANK_EVEN_ERR_THRSLD	hv_discovery.c	358;"	d	file:
+RANK_EVEN_OV	hv_discovery.c	350;"	d	file:
+RANK_ODD_ERR_CNT	hv_discovery.c	349;"	d	file:
+RANK_ODD_ERR_THRSLD	hv_discovery.c	357;"	d	file:
+RANK_ODD_OV	hv_discovery.c	348;"	d	file:
+RANK_WIDTH_BITS	hv_discovery.c	306;"	d	file:
+RASENABLES	hv_discovery.c	292;"	d	file:
+RIR_OFFSET	hv_discovery.c	336;"	d	file:
+RIR_RNK_TGT	hv_discovery.c	335;"	d	file:
+RIR_WAY	hv_discovery.c	323;"	d	file:
+SAD_CONTROL	hv_discovery.c	262;"	d	file:
+SAD_TARGET	hv_discovery.c	256;"	d	file:
+SANDY_BRIDGE	hv_discovery.c	/^	SANDY_BRIDGE,$/;"	e	enum:type	file:
+SBRIDGE_REVISION	hv_discovery.c	128;"	d	file:
+SB_RANK_CFG_A	hv_discovery.c	363;"	d	file:
+SOURCE_ID	hv_discovery.c	258;"	d	file:
+SOURCE_ID_KNL	hv_discovery.c	260;"	d	file:
+TAD_CH	hv_discovery.c	275;"	d	file:
+TAD_LIMIT	hv_discovery.c	273;"	d	file:
+TAD_OFFSET	hv_discovery.c	315;"	d	file:
+TAD_SOCK	hv_discovery.c	274;"	d	file:
+TAD_TGT0	hv_discovery.c	279;"	d	file:
+TAD_TGT1	hv_discovery.c	278;"	d	file:
+TAD_TGT2	hv_discovery.c	277;"	d	file:
+TAD_TGT3	hv_discovery.c	276;"	d	file:
+TOHM	hv_discovery.c	243;"	d	file:
+TOLM	hv_discovery.c	242;"	d	file:
+TOTAL_ARCHS	hv_discovery.c	379;"	d	file:
+__ibridge_get_width	hv_discovery.c	/^static enum dev_type __ibridge_get_width(u32 mtr)$/;"	f	file:
+_edac_mc_free	hv_discovery.c	/^static void _edac_mc_free(struct mem_ctl_info *mci)$/;"	f	file:
+alloc_sbridge_dev	hv_discovery.c	/^static struct sbridge_dev *alloc_sbridge_dev(u8 bus,$/;"	f	file:
+broadwell_get_width	hv_discovery.c	/^static enum dev_type broadwell_get_width(struct sbridge_pvt *pvt, u32 mtr)$/;"	f	file:
+broadwell_mci_bind_devs	hv_discovery.c	/^static int broadwell_mci_bind_devs(struct mem_ctl_info *mci,$/;"	f	file:
+bus	hv_discovery.c	/^	u8			bus, mc;$/;"	m	struct:sbridge_dev	file:
+channel	hv_discovery.c	/^	struct sbridge_channel	channel[NUM_CHANNELS];$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::sbridge_channel	file:
+correrrcnt	hv_discovery.c	/^static const u32 correrrcnt[] = {$/;"	v	file:
+correrrthrsld	hv_discovery.c	/^static const u32 correrrthrsld[] = {$/;"	v	file:
+descr	hv_discovery.c	/^	const struct pci_id_descr	*descr;$/;"	m	struct:pci_id_table	typeref:struct:pci_id_table::pci_id_descr	file:
+dev_id	hv_discovery.c	/^	int			dev_id;$/;"	m	struct:pci_id_descr	file:
+dimms	hv_discovery.c	/^	u32		dimms;$/;"	m	struct:sbridge_channel	file:
+discover_hvdimm	hv_discovery.c	/^static int discover_hvdimm(void)$/;"	f	file:
+dram_attr	hv_discovery.c	/^	u32		(*dram_attr)(u32 reg);$/;"	m	struct:sbridge_info	file:
+dram_attr	hv_discovery.c	/^static u32 dram_attr(u32 reg)$/;"	f	file:
+dram_attr_knl	hv_discovery.c	/^static u32 dram_attr_knl(u32 reg)$/;"	f	file:
+dram_rule	hv_discovery.c	/^	const u32	*dram_rule;$/;"	m	struct:sbridge_info	file:
+e820_addr	hv_discovery.c	/^static struct e820map e820_addr;$/;"	v	typeref:struct:e820map	file:
+e820_print_type	hv_discovery.c	/^static void e820_print_type(u32 type)$/;"	f	file:
+edac_align_ptr	hv_discovery.c	/^void *edac_align_ptr(void **p, unsigned size, int n_elems)$/;"	f
+edac_layer_name	hv_discovery.c	/^const char *edac_layer_name[] = {$/;"	v
+edac_mc_alloc	hv_discovery.c	/^struct mem_ctl_info *edac_mc_alloc(unsigned mc_num,$/;"	f
+edac_mc_free	hv_discovery.c	/^static void edac_mc_free(struct mem_ctl_info *mci)$/;"	f	file:
+end	hv_discovery.c	/^	unsigned char end;$/;"	m	struct:interleave_pkg	file:
+find_installed_memory_types	hv_discovery.c	/^static int find_installed_memory_types(void)$/;"	f	file:
+free_sbridge_dev	hv_discovery.c	/^static void free_sbridge_dev(struct sbridge_dev *sbridge_dev)$/;"	f	file:
+get_dimm_config	hv_discovery.c	/^static int get_dimm_config(struct mem_ctl_info *mci)$/;"	f	file:
+get_memory_layout	hv_discovery.c	/^static void get_memory_layout(const struct mem_ctl_info *mci)$/;"	f	file:
+get_memory_type	hv_discovery.c	/^	enum mem_type	(*get_memory_type)(struct sbridge_pvt *pvt);$/;"	m	struct:sbridge_info	typeref:enum:sbridge_info::get_memory_type	file:
+get_memory_type	hv_discovery.c	/^static enum mem_type get_memory_type(struct sbridge_pvt *pvt)$/;"	f	file:
+get_node_id	hv_discovery.c	/^	u8		(*get_node_id)(struct sbridge_pvt *pvt);$/;"	m	struct:sbridge_info	file:
+get_node_id	hv_discovery.c	/^static u8 get_node_id(struct sbridge_pvt *pvt)$/;"	f	file:
+get_sbridge_dev	hv_discovery.c	/^static struct sbridge_dev *get_sbridge_dev(u8 bus, int multi_bus)$/;"	f	file:
+get_tohm	hv_discovery.c	/^	u64		(*get_tohm)(struct sbridge_pvt *pvt);$/;"	m	struct:sbridge_info	file:
+get_tolm	hv_discovery.c	/^	u64		(*get_tolm)(struct sbridge_pvt *pvt);$/;"	m	struct:sbridge_info	file:
+get_width	hv_discovery.c	/^	enum dev_type	(*get_width)(struct sbridge_pvt *pvt, u32 mtr);$/;"	m	struct:sbridge_info	typeref:enum:sbridge_info::get_width	file:
+haswell_get_memory_type	hv_discovery.c	/^static enum mem_type haswell_get_memory_type(struct sbridge_pvt *pvt)$/;"	f	file:
+haswell_get_node_id	hv_discovery.c	/^static u8 haswell_get_node_id(struct sbridge_pvt *pvt)$/;"	f	file:
+haswell_get_tohm	hv_discovery.c	/^static u64 haswell_get_tohm(struct sbridge_pvt *pvt)$/;"	f	file:
+haswell_get_tolm	hv_discovery.c	/^static u64 haswell_get_tolm(struct sbridge_pvt *pvt)$/;"	f	file:
+haswell_mci_bind_devs	hv_discovery.c	/^static int haswell_mci_bind_devs(struct mem_ctl_info *mci,$/;"	f	file:
+haswell_rir_limit	hv_discovery.c	/^static u64 haswell_rir_limit(u32 reg)$/;"	f	file:
+hv_ch_way	hv_discovery.c	/^static u8 hv_ch_way = 1;            \/* interleaving mode for hv *\/$/;"	v	file:
+hv_desc	hv_discovery.c	/^EXPORT_SYMBOL(hv_desc);$/;"	v
+hv_desc	hv_discovery.c	/^struct hv_description_tbl hv_desc[MAX_HV_DIMM];$/;"	v	typeref:struct:hv_description_tbl
+hv_discovery_exit	hv_discovery.c	/^module_exit(hv_discovery_exit);$/;"	v
+hv_discovery_exit	hv_discovery.c	/^static void __exit hv_discovery_exit(void)$/;"	f	file:
+hv_discovery_init	hv_discovery.c	/^module_init(hv_discovery_init);$/;"	v
+hv_discovery_init	hv_discovery.c	/^static int __init hv_discovery_init(void)$/;"	f	file:
+hv_discovery_pci_driver	hv_discovery.c	/^static struct pci_driver hv_discovery_pci_driver ={$/;"	v	typeref:struct:pci_driver	file:
+hv_discovery_private	hv_discovery.c	/^} hv_discovery_private;$/;"	t	typeref:struct:pci_private	file:
+hv_discovery_probe	hv_discovery.c	/^static int hv_discovery_probe($/;"	f	file:
+hv_discovery_remove	hv_discovery.c	/^static void hv_discovery_remove(struct pci_dev *pdev)$/;"	f	file:
+hv_discovery_spinlock	hv_discovery.c	/^	spinlock_t hv_discovery_spinlock;$/;"	m	struct:pci_private	file:
+hv_group	hv_discovery.c	/^EXPORT_SYMBOL(hv_group);$/;"	v
+hv_group	hv_discovery.c	/^struct hv_group_tbl hv_group[MAX_HV_GROUP] =$/;"	v	typeref:struct:hv_group_tbl
+hv_mem_size0	hv_discovery.c	/^EXPORT_SYMBOL(hv_mem_size0);        \/* hv ddr mem size at node 0 *\/$/;"	v
+hv_mem_size0	hv_discovery.c	/^static ulong hv_mem_size0;$/;"	v	file:
+hv_mem_size1	hv_discovery.c	/^EXPORT_SYMBOL(hv_mem_size1);        \/* hv ddr mem size at node 1 *\/$/;"	v
+hv_mem_size1	hv_discovery.c	/^static ulong hv_mem_size1;$/;"	v	file:
+hv_mmio_size0	hv_discovery.c	/^EXPORT_SYMBOL(hv_mmio_size0);       \/* mmio size at node 0 *\/$/;"	v
+hv_mmio_size0	hv_discovery.c	/^static ulong hv_mmio_size0;$/;"	v	file:
+hv_mmio_size1	hv_discovery.c	/^EXPORT_SYMBOL(hv_mmio_size1);       \/* mmio size at node 1 *\/$/;"	v
+hv_mmio_size1	hv_discovery.c	/^static ulong hv_mmio_size1;$/;"	v	file:
+hv_mmio_start0	hv_discovery.c	/^EXPORT_SYMBOL(hv_mmio_start0);      \/* mmio start address at node 0 *\/$/;"	v
+hv_mmio_start0	hv_discovery.c	/^static ulong hv_mmio_start0;$/;"	v	file:
+hv_mmio_start1	hv_discovery.c	/^EXPORT_SYMBOL(hv_mmio_start1);      \/* mmio start address at node 1 *\/$/;"	v
+hv_mmio_start1	hv_discovery.c	/^static ulong hv_mmio_start1;$/;"	v	file:
+hv_start_addr0	hv_discovery.c	/^EXPORT_SYMBOL(hv_start_addr0);      \/* hv start address at node 0 *\/$/;"	v
+hv_start_addr0	hv_discovery.c	/^static ulong hv_start_addr0;$/;"	v	file:
+hv_start_addr1	hv_discovery.c	/^EXPORT_SYMBOL(hv_start_addr1);      \/* hv start address at node 1 *\/$/;"	v
+hv_start_addr1	hv_discovery.c	/^static ulong hv_start_addr1;$/;"	v	file:
+hvdimm_discovered	hv_discovery.c	/^} hvdimm_discovered[MAX_CPU_NODES] = {{0}};$/;"	v	typeref:struct:hvdimm_discovered_s	file:
+hvdimm_discovered_s	hv_discovery.c	/^static struct hvdimm_discovered_s {$/;"	s	file:
+hvdimm_discovered_s::mem_size	hv_discovery.c	/^	u64 mem_size;$/;"	m	struct:hvdimm_discovered_s	file:
+hvdimm_discovered_s::mem_start	hv_discovery.c	/^	u64	mem_start;  \/\/ HV DDR4 internal memory$/;"	m	struct:hvdimm_discovered_s	file:
+hvdimm_discovered_s::mmio_size	hv_discovery.c	/^	u64 mmio_size;$/;"	m	struct:hvdimm_discovered_s	file:
+hvdimm_discovered_s::mmio_start	hv_discovery.c	/^	u64 mmio_start; \/\/ HV MMIO space$/;"	m	struct:hvdimm_discovered_s	file:
+ibridge_dram_rule	hv_discovery.c	/^static const u32 ibridge_dram_rule[] = {$/;"	v	file:
+ibridge_get_width	hv_discovery.c	/^static enum dev_type ibridge_get_width(struct sbridge_pvt *pvt, u32 mtr)$/;"	f	file:
+ibridge_interleave_list	hv_discovery.c	/^static const u32 ibridge_interleave_list[] = {$/;"	v	file:
+ibridge_interleave_pkg	hv_discovery.c	/^static const struct interleave_pkg ibridge_interleave_pkg[] = {$/;"	v	typeref:struct:interleave_pkg	file:
+info	hv_discovery.c	/^	struct sbridge_info	info;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::sbridge_info	file:
+interleave_list	hv_discovery.c	/^	const u32	*interleave_list;$/;"	m	struct:sbridge_info	file:
+interleave_mode	hv_discovery.c	/^	u32		(*interleave_mode)(u32 reg);$/;"	m	struct:sbridge_info	file:
+interleave_mode	hv_discovery.c	/^static u32 interleave_mode(u32 reg)$/;"	f	file:
+interleave_pkg	hv_discovery.c	/^	const struct interleave_pkg *interleave_pkg;$/;"	m	struct:sbridge_info	typeref:struct:sbridge_info::interleave_pkg	file:
+interleave_pkg	hv_discovery.c	/^struct interleave_pkg {$/;"	s	file:
+interleave_pkg::end	hv_discovery.c	/^	unsigned char end;$/;"	m	struct:interleave_pkg	file:
+interleave_pkg::start	hv_discovery.c	/^	unsigned char start;$/;"	m	struct:interleave_pkg	file:
+is_close_pg	hv_discovery.c	/^	bool			is_mirrored, is_lockstep, is_close_pg;$/;"	m	struct:sbridge_pvt	file:
+is_lockstep	hv_discovery.c	/^	bool			is_mirrored, is_lockstep, is_close_pg;$/;"	m	struct:sbridge_pvt	file:
+is_mirrored	hv_discovery.c	/^	bool			is_mirrored, is_lockstep, is_close_pg;$/;"	m	struct:sbridge_pvt	file:
+knl	hv_discovery.c	/^	struct knl_pvt knl;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::knl_pvt	file:
+knl_channel_mc	hv_discovery.c	/^static int knl_channel_mc(int channel)$/;"	f	file:
+knl_channel_remap	hv_discovery.c	655;"	d	file:
+knl_dram_rule	hv_discovery.c	/^static const u32 knl_dram_rule[] = {$/;"	v	file:
+knl_get_dimm_capacity	hv_discovery.c	/^static int knl_get_dimm_capacity(struct sbridge_pvt *pvt, u64 *mc_sizes)$/;"	f	file:
+knl_get_edc_route	hv_discovery.c	/^static u32 knl_get_edc_route(int entry, u32 reg)$/;"	f	file:
+knl_get_mc_route	hv_discovery.c	/^static u32 knl_get_mc_route(int entry, u32 reg)$/;"	f	file:
+knl_get_memory_type	hv_discovery.c	/^static enum mem_type knl_get_memory_type(struct sbridge_pvt *pvt)$/;"	f	file:
+knl_get_node_id	hv_discovery.c	/^static u8 knl_get_node_id(struct sbridge_pvt *pvt)$/;"	f	file:
+knl_get_tad	hv_discovery.c	/^static int knl_get_tad(const struct sbridge_pvt *pvt,$/;"	f	file:
+knl_get_tohm	hv_discovery.c	/^static u64 knl_get_tohm(struct sbridge_pvt *pvt)$/;"	f	file:
+knl_get_tolm	hv_discovery.c	/^static u64 knl_get_tolm(struct sbridge_pvt *pvt)$/;"	f	file:
+knl_get_width	hv_discovery.c	/^static enum dev_type knl_get_width(struct sbridge_pvt *pvt, u32 mtr)$/;"	f	file:
+knl_interleave_list	hv_discovery.c	/^static const u32 knl_interleave_list[] = {$/;"	v	file:
+knl_interleave_mode	hv_discovery.c	/^static u32 knl_interleave_mode(u32 reg)$/;"	f	file:
+knl_mci_bind_devs	hv_discovery.c	/^static int knl_mci_bind_devs(struct mem_ctl_info *mci,$/;"	f	file:
+knl_mtr_reg	hv_discovery.c	/^static const int knl_mtr_reg = 0xb60;$/;"	v	file:
+knl_pvt	hv_discovery.c	/^struct knl_pvt {$/;"	s	file:
+knl_pvt::pci_cha	hv_discovery.c	/^	struct pci_dev          *pci_cha[KNL_MAX_CHAS];$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+knl_pvt::pci_channel	hv_discovery.c	/^	struct pci_dev          *pci_channel[KNL_MAX_CHANNELS];$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+knl_pvt::pci_mc0	hv_discovery.c	/^	struct pci_dev          *pci_mc0;$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+knl_pvt::pci_mc0_misc	hv_discovery.c	/^	struct pci_dev          *pci_mc0_misc;$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+knl_pvt::pci_mc1	hv_discovery.c	/^	struct pci_dev          *pci_mc1;$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+knl_pvt::pci_mc1_misc	hv_discovery.c	/^	struct pci_dev          *pci_mc1_misc;$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+knl_pvt::pci_mc_info	hv_discovery.c	/^	struct pci_dev          *pci_mc_info; \/* tolm, tohm *\/$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+knl_sad_limit	hv_discovery.c	/^static u64 knl_sad_limit(u32 reg)$/;"	f	file:
+knl_show_edc_route	hv_discovery.c	/^static void knl_show_edc_route(u32 reg, char *s)$/;"	f	file:
+knl_show_interleave_mode	hv_discovery.c	/^static char *knl_show_interleave_mode(u32 reg)$/;"	f	file:
+knl_show_mc_route	hv_discovery.c	/^static void knl_show_mc_route(u32 reg, char *s)$/;"	f	file:
+knl_tad_dram_hi	hv_discovery.c	/^static const u32 knl_tad_dram_hi[] = {$/;"	v	file:
+knl_tad_dram_limit_lo	hv_discovery.c	/^static const u32 knl_tad_dram_limit_lo[] = {$/;"	v	file:
+knl_tad_dram_offset_lo	hv_discovery.c	/^static const u32 knl_tad_dram_offset_lo[] = {$/;"	v	file:
+knl_tad_ways	hv_discovery.c	/^static const u32 knl_tad_ways[] = {$/;"	v	file:
+list	hv_discovery.c	/^	struct list_head	list;$/;"	m	struct:sbridge_dev	typeref:struct:sbridge_dev::list_head	file:
+max_interleave	hv_discovery.c	/^	u8		max_interleave;$/;"	m	struct:sbridge_info	file:
+max_sad	hv_discovery.c	/^	u8		max_sad;$/;"	m	struct:sbridge_info	file:
+mc	hv_discovery.c	/^	u8			bus, mc;$/;"	m	struct:sbridge_dev	file:
+mce_entry	hv_discovery.c	/^	struct mce		mce_entry[MCE_LOG_LEN];$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::mce	file:
+mce_in	hv_discovery.c	/^	unsigned		mce_in, mce_out;$/;"	m	struct:sbridge_pvt	file:
+mce_out	hv_discovery.c	/^	unsigned		mce_in, mce_out;$/;"	m	struct:sbridge_pvt	file:
+mce_outentry	hv_discovery.c	/^	struct mce		mce_outentry[MCE_LOG_LEN];$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::mce	file:
+mce_overrun	hv_discovery.c	/^	unsigned		mce_overrun;$/;"	m	struct:sbridge_pvt	file:
+mci	hv_discovery.c	/^	struct mem_ctl_info	*mci;$/;"	m	struct:sbridge_dev	typeref:struct:sbridge_dev::mem_ctl_info	file:
+mcmtr	hv_discovery.c	/^	u32		mcmtr;$/;"	m	struct:sbridge_info	file:
+mem_size	hv_discovery.c	/^	u64 mem_size;$/;"	m	struct:hvdimm_discovered_s	file:
+mem_start	hv_discovery.c	/^	u64	mem_start;  \/\/ HV DDR4 internal memory$/;"	m	struct:hvdimm_discovered_s	file:
+mmio_size	hv_discovery.c	/^	u64 mmio_size;$/;"	m	struct:hvdimm_discovered_s	file:
+mmio_start	hv_discovery.c	/^	u64 mmio_start; \/\/ HV MMIO space$/;"	m	struct:hvdimm_discovered_s	file:
+mtr_regs	hv_discovery.c	/^static const int mtr_regs[] = {$/;"	v	file:
+n_devs	hv_discovery.c	/^	int				n_devs;$/;"	m	struct:pci_id_table	file:
+n_devs	hv_discovery.c	/^	int			n_devs;$/;"	m	struct:sbridge_dev	file:
+node0_ch_way	hv_discovery.c	/^EXPORT_SYMBOL(node0_ch_way);        \/* ch_way interleave mode of node 0 *\/$/;"	v
+node0_ch_way	hv_discovery.c	/^static uint node0_ch_way = 1;$/;"	v	file:
+node1_ch_way	hv_discovery.c	/^EXPORT_SYMBOL(node1_ch_way);        \/* ch_way interleave mode of node 1 *\/$/;"	v
+node1_ch_way	hv_discovery.c	/^static uint node1_ch_way = 0;   \/* 0 = node is not used *\/$/;"	v	file:
+node_id	hv_discovery.c	/^	u8			node_id, source_id;$/;"	m	struct:sbridge_dev	file:
+num_hv	hv_discovery.c	/^EXPORT_SYMBOL(num_hv);              \/* number of hvdimms installed *\/$/;"	v
+num_hv	hv_discovery.c	/^static uint num_hv;$/;"	v	file:
+num_nodes	hv_discovery.c	/^EXPORT_SYMBOL(num_nodes);           \/* number of nodes (cpu) used *\/$/;"	v
+num_nodes	hv_discovery.c	/^static uint num_nodes;$/;"	v	file:
+numcol	hv_discovery.c	/^static inline int numcol(u32 mtr)$/;"	f	file:
+numrank	hv_discovery.c	/^static inline int numrank(enum type type, u32 mtr)$/;"	f	file:
+numrow	hv_discovery.c	/^static inline int numrow(u32 mtr)$/;"	f	file:
+nvdimm_count	hv_discovery.c	/^static u8 nvdimm_count = 0;$/;"	v	file:
+nvdimm_e820_addr	hv_discovery.c	/^static u64 nvdimm_e820_addr[8];	    \/* to save nvdimm found in e820 *\/$/;"	v	file:
+nvdimm_e820_size	hv_discovery.c	/^static u64 nvdimm_e820_size[8];$/;"	v	file:
+optional	hv_discovery.c	/^	int			optional;$/;"	m	struct:pci_id_descr	file:
+pci_br0	hv_discovery.c	/^	struct pci_dev		*pci_br0, *pci_br1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+pci_br1	hv_discovery.c	/^	struct pci_dev		*pci_br0, *pci_br1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+pci_cha	hv_discovery.c	/^	struct pci_dev          *pci_cha[KNL_MAX_CHAS];$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+pci_channel	hv_discovery.c	/^	struct pci_dev          *pci_channel[KNL_MAX_CHANNELS];$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+pci_ddrio	hv_discovery.c	/^	struct pci_dev		*pci_ta, *pci_ddrio, *pci_ras;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+pci_dev_descr_broadwell	hv_discovery.c	/^static const struct pci_id_descr pci_dev_descr_broadwell[] = {$/;"	v	typeref:struct:pci_id_descr	file:
+pci_dev_descr_broadwell_table	hv_discovery.c	/^static const struct pci_id_table pci_dev_descr_broadwell_table[] = {$/;"	v	typeref:struct:pci_id_table	file:
+pci_dev_descr_haswell	hv_discovery.c	/^static const struct pci_id_descr pci_dev_descr_haswell[] = {$/;"	v	typeref:struct:pci_id_descr	file:
+pci_dev_descr_haswell_table	hv_discovery.c	/^static const struct pci_id_table pci_dev_descr_haswell_table[] = {$/;"	v	typeref:struct:pci_id_table	file:
+pci_dev_descr_ibridge	hv_discovery.c	/^static const struct pci_id_descr pci_dev_descr_ibridge[] = {$/;"	v	typeref:struct:pci_id_descr	file:
+pci_dev_descr_ibridge_table	hv_discovery.c	/^static const struct pci_id_table pci_dev_descr_ibridge_table[] = {$/;"	v	typeref:struct:pci_id_table	file:
+pci_dev_descr_knl	hv_discovery.c	/^static const struct pci_id_descr pci_dev_descr_knl[] = {$/;"	v	typeref:struct:pci_id_descr	file:
+pci_dev_descr_knl_table	hv_discovery.c	/^static const struct pci_id_table pci_dev_descr_knl_table[] = {$/;"	v	typeref:struct:pci_id_table	file:
+pci_dev_descr_sbridge	hv_discovery.c	/^static const struct pci_id_descr pci_dev_descr_sbridge[] = {$/;"	v	typeref:struct:pci_id_descr	file:
+pci_dev_descr_sbridge_table	hv_discovery.c	/^static const struct pci_id_table pci_dev_descr_sbridge_table[] = {$/;"	v	typeref:struct:pci_id_table	file:
+pci_ha0	hv_discovery.c	/^	struct pci_dev		*pci_ha0, *pci_ha1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+pci_ha1	hv_discovery.c	/^	struct pci_dev		*pci_ha0, *pci_ha1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+pci_ha1_ta	hv_discovery.c	/^	struct pci_dev		*pci_ha1_ta;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+pci_id_descr	hv_discovery.c	/^struct pci_id_descr {$/;"	s	file:
+pci_id_descr::dev_id	hv_discovery.c	/^	int			dev_id;$/;"	m	struct:pci_id_descr	file:
+pci_id_descr::optional	hv_discovery.c	/^	int			optional;$/;"	m	struct:pci_id_descr	file:
+pci_id_table	hv_discovery.c	/^struct pci_id_table {$/;"	s	file:
+pci_id_table::descr	hv_discovery.c	/^	const struct pci_id_descr	*descr;$/;"	m	struct:pci_id_table	typeref:struct:pci_id_table::pci_id_descr	file:
+pci_id_table::n_devs	hv_discovery.c	/^	int				n_devs;$/;"	m	struct:pci_id_table	file:
+pci_mc0	hv_discovery.c	/^	struct pci_dev          *pci_mc0;$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+pci_mc0_misc	hv_discovery.c	/^	struct pci_dev          *pci_mc0_misc;$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+pci_mc1	hv_discovery.c	/^	struct pci_dev          *pci_mc1;$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+pci_mc1_misc	hv_discovery.c	/^	struct pci_dev          *pci_mc1_misc;$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+pci_mc_info	hv_discovery.c	/^	struct pci_dev          *pci_mc_info; \/* tolm, tohm *\/$/;"	m	struct:knl_pvt	typeref:struct:knl_pvt::pci_dev	file:
+pci_private	hv_discovery.c	/^typedef struct pci_private {$/;"	s	file:
+pci_private::hv_discovery_spinlock	hv_discovery.c	/^	spinlock_t hv_discovery_spinlock;$/;"	m	struct:pci_private	file:
+pci_private::pdev	hv_discovery.c	/^	struct pci_dev *pdev;$/;"	m	struct:pci_private	typeref:struct:pci_private::pci_dev	file:
+pci_ras	hv_discovery.c	/^	struct pci_dev		*pci_ta, *pci_ddrio, *pci_ras;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+pci_sad0	hv_discovery.c	/^	struct pci_dev		*pci_sad0, *pci_sad1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+pci_sad1	hv_discovery.c	/^	struct pci_dev		*pci_sad0, *pci_sad1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+pci_ta	hv_discovery.c	/^	struct pci_dev		*pci_ta, *pci_ddrio, *pci_ras;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+pci_tad	hv_discovery.c	/^	struct pci_dev		*pci_tad[NUM_CHANNELS];$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+pci_vtd	hv_discovery.c	/^	struct pci_dev	*pci_vtd;$/;"	m	struct:sbridge_info	typeref:struct:sbridge_info::pci_dev	file:
+pdev	hv_discovery.c	/^	struct pci_dev		**pdev;$/;"	m	struct:sbridge_dev	typeref:struct:sbridge_dev::pci_dev	file:
+pdev	hv_discovery.c	/^	struct pci_dev *pdev;$/;"	m	struct:pci_private	typeref:struct:pci_private::pci_dev	file:
+populate_hvdata	hv_discovery.c	/^static void populate_hvdata(void)$/;"	f	file:
+print_discovered_hvs	hv_discovery.c	/^static void print_discovered_hvs(void)$/;"	f	file:
+probed	hv_discovery.c	/^static int probed;$/;"	v	file:
+rankcfgr	hv_discovery.c	/^	u32		rankcfgr;$/;"	m	struct:sbridge_info	file:
+ranks	hv_discovery.c	/^	u32		ranks;$/;"	m	struct:sbridge_channel	file:
+rir_limit	hv_discovery.c	/^	u64		(*rir_limit)(u32 reg);$/;"	m	struct:sbridge_info	file:
+rir_limit	hv_discovery.c	/^static u64 rir_limit(u32 reg)$/;"	f	file:
+rir_offset	hv_discovery.c	/^static const u32 rir_offset[MAX_RIR_RANGES][MAX_RIR_WAY] = {$/;"	v	file:
+rir_way_limit	hv_discovery.c	/^static const u32 rir_way_limit[] = {$/;"	v	file:
+sad_limit	hv_discovery.c	/^	u64		(*sad_limit)(u32 reg);$/;"	m	struct:sbridge_info	file:
+sad_limit	hv_discovery.c	/^static u64 sad_limit(u32 reg)$/;"	f	file:
+sad_pkg	hv_discovery.c	/^static inline int sad_pkg(const struct interleave_pkg *table, u32 reg,$/;"	f	file:
+sad_pkg_ha	hv_discovery.c	/^static inline u8 sad_pkg_ha(u8 pkg)$/;"	f	file:
+sad_pkg_socket	hv_discovery.c	/^static inline u8 sad_pkg_socket(u8 pkg)$/;"	f	file:
+sbridge_channel	hv_discovery.c	/^struct sbridge_channel {$/;"	s	file:
+sbridge_channel::dimms	hv_discovery.c	/^	u32		dimms;$/;"	m	struct:sbridge_channel	file:
+sbridge_channel::ranks	hv_discovery.c	/^	u32		ranks;$/;"	m	struct:sbridge_channel	file:
+sbridge_dev	hv_discovery.c	/^	struct sbridge_dev	*sbridge_dev;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::sbridge_dev	file:
+sbridge_dev	hv_discovery.c	/^struct sbridge_dev {$/;"	s	file:
+sbridge_dev::bus	hv_discovery.c	/^	u8			bus, mc;$/;"	m	struct:sbridge_dev	file:
+sbridge_dev::list	hv_discovery.c	/^	struct list_head	list;$/;"	m	struct:sbridge_dev	typeref:struct:sbridge_dev::list_head	file:
+sbridge_dev::mc	hv_discovery.c	/^	u8			bus, mc;$/;"	m	struct:sbridge_dev	file:
+sbridge_dev::mci	hv_discovery.c	/^	struct mem_ctl_info	*mci;$/;"	m	struct:sbridge_dev	typeref:struct:sbridge_dev::mem_ctl_info	file:
+sbridge_dev::n_devs	hv_discovery.c	/^	int			n_devs;$/;"	m	struct:sbridge_dev	file:
+sbridge_dev::node_id	hv_discovery.c	/^	u8			node_id, source_id;$/;"	m	struct:sbridge_dev	file:
+sbridge_dev::pdev	hv_discovery.c	/^	struct pci_dev		**pdev;$/;"	m	struct:sbridge_dev	typeref:struct:sbridge_dev::pci_dev	file:
+sbridge_dev::source_id	hv_discovery.c	/^	u8			node_id, source_id;$/;"	m	struct:sbridge_dev	file:
+sbridge_dram_rule	hv_discovery.c	/^static const u32 sbridge_dram_rule[] = {$/;"	v	file:
+sbridge_get_all_devices	hv_discovery.c	2226;"	d	file:
+sbridge_get_all_devices_full	hv_discovery.c	/^static int sbridge_get_all_devices_full(u8 *num_mc,$/;"	f	file:
+sbridge_get_all_devices_knl	hv_discovery.c	2228;"	d	file:
+sbridge_get_onedevice	hv_discovery.c	/^static int sbridge_get_onedevice(struct pci_dev **prev,$/;"	f	file:
+sbridge_get_tohm	hv_discovery.c	/^static u64 sbridge_get_tohm(struct sbridge_pvt *pvt)$/;"	f	file:
+sbridge_get_tolm	hv_discovery.c	/^static u64 sbridge_get_tolm(struct sbridge_pvt *pvt)$/;"	f	file:
+sbridge_get_width	hv_discovery.c	/^static enum dev_type sbridge_get_width(struct sbridge_pvt *pvt, u32 mtr)$/;"	f	file:
+sbridge_info	hv_discovery.c	/^struct sbridge_info {$/;"	s	file:
+sbridge_info::dram_attr	hv_discovery.c	/^	u32		(*dram_attr)(u32 reg);$/;"	m	struct:sbridge_info	file:
+sbridge_info::dram_rule	hv_discovery.c	/^	const u32	*dram_rule;$/;"	m	struct:sbridge_info	file:
+sbridge_info::get_memory_type	hv_discovery.c	/^	enum mem_type	(*get_memory_type)(struct sbridge_pvt *pvt);$/;"	m	struct:sbridge_info	typeref:enum:sbridge_info::get_memory_type	file:
+sbridge_info::get_node_id	hv_discovery.c	/^	u8		(*get_node_id)(struct sbridge_pvt *pvt);$/;"	m	struct:sbridge_info	file:
+sbridge_info::get_tohm	hv_discovery.c	/^	u64		(*get_tohm)(struct sbridge_pvt *pvt);$/;"	m	struct:sbridge_info	file:
+sbridge_info::get_tolm	hv_discovery.c	/^	u64		(*get_tolm)(struct sbridge_pvt *pvt);$/;"	m	struct:sbridge_info	file:
+sbridge_info::get_width	hv_discovery.c	/^	enum dev_type	(*get_width)(struct sbridge_pvt *pvt, u32 mtr);$/;"	m	struct:sbridge_info	typeref:enum:sbridge_info::get_width	file:
+sbridge_info::interleave_list	hv_discovery.c	/^	const u32	*interleave_list;$/;"	m	struct:sbridge_info	file:
+sbridge_info::interleave_mode	hv_discovery.c	/^	u32		(*interleave_mode)(u32 reg);$/;"	m	struct:sbridge_info	file:
+sbridge_info::interleave_pkg	hv_discovery.c	/^	const struct interleave_pkg *interleave_pkg;$/;"	m	struct:sbridge_info	typeref:struct:sbridge_info::interleave_pkg	file:
+sbridge_info::max_interleave	hv_discovery.c	/^	u8		max_interleave;$/;"	m	struct:sbridge_info	file:
+sbridge_info::max_sad	hv_discovery.c	/^	u8		max_sad;$/;"	m	struct:sbridge_info	file:
+sbridge_info::mcmtr	hv_discovery.c	/^	u32		mcmtr;$/;"	m	struct:sbridge_info	file:
+sbridge_info::pci_vtd	hv_discovery.c	/^	struct pci_dev	*pci_vtd;$/;"	m	struct:sbridge_info	typeref:struct:sbridge_info::pci_dev	file:
+sbridge_info::rankcfgr	hv_discovery.c	/^	u32		rankcfgr;$/;"	m	struct:sbridge_info	file:
+sbridge_info::rir_limit	hv_discovery.c	/^	u64		(*rir_limit)(u32 reg);$/;"	m	struct:sbridge_info	file:
+sbridge_info::sad_limit	hv_discovery.c	/^	u64		(*sad_limit)(u32 reg);$/;"	m	struct:sbridge_info	file:
+sbridge_info::show_interleave_mode	hv_discovery.c	/^	char*		(*show_interleave_mode)(u32 reg);$/;"	m	struct:sbridge_info	file:
+sbridge_info::type	hv_discovery.c	/^	enum type	type;$/;"	m	struct:sbridge_info	typeref:enum:sbridge_info::type	file:
+sbridge_interleave_list	hv_discovery.c	/^static const u32 sbridge_interleave_list[] = {$/;"	v	file:
+sbridge_interleave_pkg	hv_discovery.c	/^static const struct interleave_pkg sbridge_interleave_pkg[] = {$/;"	v	typeref:struct:interleave_pkg	file:
+sbridge_mci_bind_devs	hv_discovery.c	/^static int sbridge_mci_bind_devs(struct mem_ctl_info *mci,$/;"	f	file:
+sbridge_pci_tbl	hv_discovery.c	/^static const struct pci_device_id sbridge_pci_tbl[] = {$/;"	v	typeref:struct:pci_device_id	file:
+sbridge_put_all_devices	hv_discovery.c	/^static void sbridge_put_all_devices(void)$/;"	f	file:
+sbridge_put_devices	hv_discovery.c	/^static void sbridge_put_devices(struct sbridge_dev *sbridge_dev)$/;"	f	file:
+sbridge_pvt	hv_discovery.c	/^struct sbridge_pvt {$/;"	s	file:
+sbridge_pvt::channel	hv_discovery.c	/^	struct sbridge_channel	channel[NUM_CHANNELS];$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::sbridge_channel	file:
+sbridge_pvt::info	hv_discovery.c	/^	struct sbridge_info	info;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::sbridge_info	file:
+sbridge_pvt::is_close_pg	hv_discovery.c	/^	bool			is_mirrored, is_lockstep, is_close_pg;$/;"	m	struct:sbridge_pvt	file:
+sbridge_pvt::is_lockstep	hv_discovery.c	/^	bool			is_mirrored, is_lockstep, is_close_pg;$/;"	m	struct:sbridge_pvt	file:
+sbridge_pvt::is_mirrored	hv_discovery.c	/^	bool			is_mirrored, is_lockstep, is_close_pg;$/;"	m	struct:sbridge_pvt	file:
+sbridge_pvt::knl	hv_discovery.c	/^	struct knl_pvt knl;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::knl_pvt	file:
+sbridge_pvt::mce_entry	hv_discovery.c	/^	struct mce		mce_entry[MCE_LOG_LEN];$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::mce	file:
+sbridge_pvt::mce_in	hv_discovery.c	/^	unsigned		mce_in, mce_out;$/;"	m	struct:sbridge_pvt	file:
+sbridge_pvt::mce_out	hv_discovery.c	/^	unsigned		mce_in, mce_out;$/;"	m	struct:sbridge_pvt	file:
+sbridge_pvt::mce_outentry	hv_discovery.c	/^	struct mce		mce_outentry[MCE_LOG_LEN];$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::mce	file:
+sbridge_pvt::mce_overrun	hv_discovery.c	/^	unsigned		mce_overrun;$/;"	m	struct:sbridge_pvt	file:
+sbridge_pvt::pci_br0	hv_discovery.c	/^	struct pci_dev		*pci_br0, *pci_br1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+sbridge_pvt::pci_br1	hv_discovery.c	/^	struct pci_dev		*pci_br0, *pci_br1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+sbridge_pvt::pci_ddrio	hv_discovery.c	/^	struct pci_dev		*pci_ta, *pci_ddrio, *pci_ras;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+sbridge_pvt::pci_ha0	hv_discovery.c	/^	struct pci_dev		*pci_ha0, *pci_ha1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+sbridge_pvt::pci_ha1	hv_discovery.c	/^	struct pci_dev		*pci_ha0, *pci_ha1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+sbridge_pvt::pci_ha1_ta	hv_discovery.c	/^	struct pci_dev		*pci_ha1_ta;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+sbridge_pvt::pci_ras	hv_discovery.c	/^	struct pci_dev		*pci_ta, *pci_ddrio, *pci_ras;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+sbridge_pvt::pci_sad0	hv_discovery.c	/^	struct pci_dev		*pci_sad0, *pci_sad1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+sbridge_pvt::pci_sad1	hv_discovery.c	/^	struct pci_dev		*pci_sad0, *pci_sad1;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::	file:
+sbridge_pvt::pci_ta	hv_discovery.c	/^	struct pci_dev		*pci_ta, *pci_ddrio, *pci_ras;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+sbridge_pvt::pci_tad	hv_discovery.c	/^	struct pci_dev		*pci_tad[NUM_CHANNELS];$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::pci_dev	file:
+sbridge_pvt::sbridge_dev	hv_discovery.c	/^	struct sbridge_dev	*sbridge_dev;$/;"	m	struct:sbridge_pvt	typeref:struct:sbridge_pvt::sbridge_dev	file:
+sbridge_pvt::tohm	hv_discovery.c	/^	u64			tolm, tohm;$/;"	m	struct:sbridge_pvt	file:
+sbridge_pvt::tolm	hv_discovery.c	/^	u64			tolm, tohm;$/;"	m	struct:sbridge_pvt	file:
+sbridge_register_mci	hv_discovery.c	/^static int sbridge_register_mci(struct sbridge_dev *sbridge_dev, enum type type)$/;"	f	file:
+sbridge_unregister_mci	hv_discovery.c	/^static void sbridge_unregister_mci(struct sbridge_dev *sbridge_dev)$/;"	f	file:
+show_dram_attr	hv_discovery.c	/^static char *show_dram_attr(u32 attr)$/;"	f	file:
+show_interleave_mode	hv_discovery.c	/^	char*		(*show_interleave_mode)(u32 reg);$/;"	m	struct:sbridge_info	file:
+show_interleave_mode	hv_discovery.c	/^char *show_interleave_mode(u32 reg)$/;"	f
+source_id	hv_discovery.c	/^	u8			node_id, source_id;$/;"	m	struct:sbridge_dev	file:
+start	hv_discovery.c	/^	unsigned char start;$/;"	m	struct:interleave_pkg	file:
+system_has_hv_only	hv_discovery.c	/^static int system_has_hv_only = 0;  \/* 1 = only populated with hv, 0 = mixed with LDRDIMM, negative = no HV *\/$/;"	v	file:
+system_mmio_size	hv_discovery.c	/^static u64 system_mmio_size;        \/* 4GB - TOLM *\/$/;"	v	file:
+tad_ch_nilv_offset	hv_discovery.c	/^static const u32 tad_ch_nilv_offset[] = {$/;"	v	file:
+tad_dram_rule	hv_discovery.c	/^static const u32 tad_dram_rule[] = {$/;"	v	file:
+tohm	hv_discovery.c	/^	u64			tolm, tohm;$/;"	m	struct:sbridge_pvt	file:
+tolm	hv_discovery.c	/^	u64			tolm, tohm;$/;"	m	struct:sbridge_pvt	file:
+tolm_upper_gb	hv_discovery.c	/^static u64 tolm_upper_gb = 0;       \/* in hex 64 bit, upper address of TOLM *\/$/;"	v	file:
+type	hv_discovery.c	/^	enum type	type;$/;"	m	struct:sbridge_info	typeref:enum:sbridge_info::type	file:
+type	hv_discovery.c	/^enum type {$/;"	g	file:
+type_name	hv_discovery.c	/^const char* type_name[TOTAL_ARCHS] = {"Sandy Bridge", "Ivy Bridge", "Haswell", "Broadwell", "KnightsLanding"};$/;"	v

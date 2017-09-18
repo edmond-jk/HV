@@ -1,0 +1,15 @@
+hv2/*
+hv3/*
+drivers/hv3/
+*.ko
+*.mod*
+*.o
+*.cproject
+*.symvers
+*.order
+.*.*.cmd
+*.project
+*.vpj
+*.vpw
+*.vtg
+*.patch

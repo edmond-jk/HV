@@ -1,0 +1,10 @@
+#BSM read test
+echo 1 >/sys/kernel/debug/hvcmd_test/bsm_read
+cp /sys/kernel/debug/hvcmd_test/4k_file_out bsm_4k_out.txt
+
+#Copy kernel file for comparison
+cp /sys/kernel/debug/hvcmd_test/4k_file_in bsm_4k_in.txt
+
+#Compare BSM read output to BSM write input data
+meld bsm_4k_out.txt bsm_4k_in.txt&
+

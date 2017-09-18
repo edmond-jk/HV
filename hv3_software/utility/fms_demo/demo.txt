@@ -1,0 +1,61 @@
+
+
+1. Power on the server
+2. [OPTIONAL] Load FPGA image to master and slave FPGA using Vivado 2016.1
+3. Load kprobe.ko:
+	-. cd /home/lab/work/kprobe
+	-. insmod kprobe.ko
+
+4. Run MMIO CMD Wrt training:
+	-. cd /home/lab/work/myung/hv_training/temp2
+	-. ./test0731 -d 3 -t 4
+	-. Visually identify a good range first from the result of this run.
+5. Select the range and retrain:
+	-. ./test0731 -d 3 -t 4 x y -u
+		where x and y are the range values selected at the end of the step #4.
+
+6. Load test driver:
+	-. cd /home/lab/work/myung/hv3_software/drivers-tr
+	-. sh scripts/insmod.sh
+7. Run script:
+	-. set_hvcmd_test.sh 1
+8. Confirm data capture:
+	-. cd /home/lab/work/myung/hv_training/temp2
+	-. ./test0731 -d 3 -i
+	-. If you don't see the good result, you may have to repeat the step #7 multiple times.
+
+;;------------------------------------------------------------------------------------------------
+9. Enable BCOM logic:
+	-. ./test0731 -d 3 -5 14 0x80
+	-. ./test0731 -d 3 -7 14 0x80
+	-. then, visually verify that the register values are written correctly
+		by issuing the following command: ./test0731 -d 3 -i
+10. Enable BCOM MUX SW:
+	-. ./test0731 -d 3 -B
+	-. You may have to issue this command multiple times, like 10, just in case.
+
+11. PreSight-write training
+	-. ./test0731 -d 3 -t 16 -D 2
+	-. Visually select a good test result range
+	-. ./test0731 -d 3 -t 16 x y
+		where x and y are range values selected by the user
+;;------------------------------------------------------------------------------------------------
+
+12. Run PreSight-write operation
+	-. cd /home/lab/work/myung/demo89
+	-. ./hvdemo_0804 -demo 3 0 1 0x1111222233334444 0x5555666677778888
+	-. ./hvdemo_0804 -demo 3 0 3
+		This command will show the two 64-bit patterns on the screen.
+	-. ./hvdemo_0804 -demo 3 0 2 0x400000000
+		This command performs an actual PreSight-write operation. It will display
+		the content of the DRAM location 0x400000000. The address used in this
+		command shold be a physical address. The range of the address should be
+		between 0x380000000 and 0x440000000.
+13. You can verify the result of the step #12 by using devmem2h.
+	-. cd /home/lab/work/devmem2c
+	-. devmem2h 0x400000000 r 64
+
+;-------------------------------------------------------------------------------
+
+* kprobe
+* devmem2h

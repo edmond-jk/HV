@@ -1,0 +1,19 @@
+sudo sh insmod.sh
+
+#MMLS write test
+echo 0 > /sys/kernel/debug/hvcmd_test/async
+echo 9 >/sys/kernel/debug/hvcmd_test/tag
+echo 8 >/sys/kernel/debug/hvcmd_test/sector
+echo 40 >/sys/kernel/debug/hvcmd_test/LBA
+echo $1 >write_data
+echo $1 >>write_data
+echo $1 >>write_data
+echo $1 >>write_data
+echo $1 >>write_data
+echo $1 >>write_data
+echo $1 >>write_data
+echo $1 >>write_data
+cp write_data /sys/kernel/debug/hvcmd_test/4k_file_in
+echo 1 >/sys/kernel/debug/hvcmd_test/mmls_write
+
+

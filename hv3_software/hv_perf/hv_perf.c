@@ -1,0 +1,460 @@
+#include <linux/init.h>
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/kthread.h>
+
+#include <linux/hdreg.h>
+#include <linux/debugfs.h>
+#include <linux/fs.h>
+#include <linux/errno.h>
+
+#include <linux/slab.h>
+#include <linux/vmalloc.h>
+#include <linux/string.h>
+#include <linux/hrtimer.h>
+
+#include <linux/seq_file.h>
+#include <linux/time.h>
+#include <uapi/linux/stat.h>
+#include <linux/delay.h>
+
+#include "../drivers/hv_cmd.h"
+
+
+#define REQ_SIZE                    8           // 4KB
+
+#define HV_OFFSET                   0x80000000  // 1GB offset in # of sectors
+
+#define TOTAL_IOS                   0x300000      // 65,536
+#define REQ_OFFSET                  256			// number of blocks, where block size is 512 Byte 
+#define REAL_REQ_SIZE               512 * REQ_OFFSET
+#define WRITE_RATIO                 67 
+
+
+#define HV_MMIO_SIZE                0x100000    // 1MB in Bytes
+#define HV_MMLS_DRAM_SIZE           0x6000000   // 96MB
+#define HV_BUFFER_SIZE              0x40000000  // 1GB
+#define IO_BUFFER_SIZE              0x20000000  // 512MB
+
+#define LOG_SIZE                    4096
+/*
+ * 26GB = 16GB LRDIMM + 8GB HVDIMM + 2GB (reserved memory by the system)
+ */
+#if 0
+#define LRDIMM_SIZE                 0x400000000 // 16GB
+#define SYS_RESERVED_MEM_SIZE       0x80000000  // 2GB
+#define HV_DRAM_SIZE                0x200000000 // 8GB
+#define TOP_OF_SYS_MEM              LRDIMM_SIZE + SYS_RESERVED_MEM_SIZE + HV_DRAM_SIZE
+#define FAKE_BUFF_SYS_PADDR         TOP_OF_SYS_MEM - HV_MMIO_SIZE - HV_MMLS_DRAM_SIZE - HV_BUFFER_SIZE  
+#else
+#define FAKE_BUFF_SYS_PADDR         0x200000000 // 8GB ....0x5C0000000 // 23GB
+#endif
+
+static struct task_struct *thread_st;
+
+extern int bsm_write_command_emmc(unsigned int tag, unsigned int sector, unsigned int lba,
+                unsigned char *buf, unsigned char *vbuf, unsigned char async, void *callback_func);
+
+extern int bsm_read_command_emmc(unsigned int tag, unsigned int sector, unsigned int lba,
+                unsigned char *buf, unsigned char *vbuf, unsigned char async, void *callback_func);
+
+// Debug FS
+static struct dentry *log_file;
+static struct dentry *control_file;
+static u32    control_key = 0;
+
+char *log_buf[LOG_SIZE][100];
+struct timeval  current_time;
+struct tm   broken;
+unsigned long   local_time;
+
+static int show (struct seq_file *m, void *v)
+{
+    int i;
+    
+    for (i = 0; i < LOG_SIZE; i++)
+    {
+        seq_printf(m, log_buf[i]);
+    }
+
+    return 0;
+}
+
+static int open (struct inode *inode, struct file *file)
+{
+    return single_open(file, show, NULL);
+}
+
+static const struct file_operations fops = {
+    .llseek = seq_lseek,
+    .open = open,
+    .owner = THIS_MODULE,
+    .read = seq_read,
+    .release = single_release,
+};
+
+
+#if 0
+static int io_generator(void)
+{ 
+    phys_addr_t pmem_off =  HV_OFFSET;
+    unsigned int i, k; 
+    int result;
+    ktime_t startTime;
+    s64 timeTaken_us;
+    unsigned int TOTAL_W_IOS    = TOTAL_IOS;
+    unsigned int TOTAL_R_IOS    = TOTAL_IOS;
+
+    void*   fake_read_buff_pa = (unsigned char*) FAKE_BUFF_SYS_PADDR;
+    void*   fake_read_buff_va = (unsigned char*) ioremap_cache(FAKE_BUFF_SYS_PADDR, IO_BUFFER_SIZE);
+    void*   fake_write_buff_pa = (unsigned char*) FAKE_BUFF_SYS_PADDR + IO_BUFFER_SIZE;
+    void*   fake_write_buff_va = (unsigned char*) ioremap_wc(FAKE_BUFF_SYS_PADDR + IO_BUFFER_SIZE, IO_BUFFER_SIZE);
+ //   void*   fake_write_buff_va = (unsigned char*) ioremap_cache(FAKE_BUFF_SYS_PADDR + IO_BUFFER_SIZE, IO_BUFFER_SIZE);
+
+    void*   tmp_FRB_PA = fake_read_buff_pa;
+    void*   tmp_FRB_VA = fake_read_buff_va;
+#if 0
+    k = 0;
+    for (i = 0; i < TOTAL_W_IOS; i++) 
+    {
+        k++;
+        
+        if (k == 1)
+        { 
+            startTime = ktime_get();  
+        }  
+        result = bsm_write_command_emmc(0, REQ_SIZE, (unsigned int)(pmem_off), tmp_FRB_PA, 
+                                                tmp_FRB_VA, 0, NULL); 
+        tmp_FRB_PA += REAL_REQ_SIZE;
+        tmp_FRB_VA += REAL_REQ_SIZE;
+
+        if (tmp_FRB_PA >= fake_read_buff_pa + IO_BUFFER_SIZE)
+        {
+            tmp_FRB_PA = fake_read_buff_pa;
+        }
+
+        if (tmp_FRB_VA >= fake_read_buff_va + IO_BUFFER_SIZE)
+        {
+            tmp_FRB_VA = fake_read_buff_va;
+        }
+
+
+        pmem_off += REQ_OFFSET;
+
+        if (result < 0) 
+        { 
+            printk("bsm_write_command_emmc error\n");
+        } 
+        
+        timeTaken_us = ktime_us_delta(ktime_get(), startTime);
+
+        if (timeTaken_us >= 1000000) // 100 msec
+        {
+            
+            printk("BSM WRITE IOPS: %u, delay: %lld us\n", k, timeTaken_us);
+
+            k = 0;
+        }
+    }
+    printk("W total TakenTime: %lld\n", timeTaken_us);
+#endif
+#if 1    
+    k = 0;
+    pmem_off = HV_OFFSET; 
+    for (i = 0; i < TOTAL_R_IOS; i++) 
+    {
+        k++;
+
+        
+        if (k == 1)
+        { 
+            startTime = ktime_get();  
+        }  
+        
+        result = bsm_read_command_emmc(0, REQ_SIZE, (unsigned int)(pmem_off), fake_write_buff_pa, 
+                                                fake_write_buff_va, 0, NULL);
+        
+        pmem_off += REQ_OFFSET;
+
+        if (result < 0) 
+        { 
+            printk("bsm_write_command_emmc error\n");
+        } 
+        
+        timeTaken_us = ktime_us_delta(ktime_get(), startTime);
+
+        if (timeTaken_us >= 1000000) // 100 msec
+        {
+            
+            printk("BSM READ IOPS: %u, delay: %lld us\n", k, timeTaken_us);
+
+            k = 0;
+        }
+
+    }
+    printk("R total TakenTime: %lld\n", timeTaken_us);
+    
+#endif
+
+    iounmap(fake_read_buff_va);
+    iounmap(fake_write_buff_va);
+
+    printk(KERN_INFO "Thread Stopping\n");
+    do_exit(0);
+
+    return 0;
+}
+#endif
+#if 1
+static int io_generator(void)
+{ 
+    phys_addr_t pmem_off =  HV_OFFSET;
+    unsigned int i,  write_count, io_count; 
+    int result,  write_enable;
+    ktime_t startTime;
+    s64 timeTaken_us;
+    int log_index = 0;
+
+    void*   fake_read_buff_pa = (unsigned char*) FAKE_BUFF_SYS_PADDR;
+    void*   fake_read_buff_va = (unsigned char*) ioremap_cache(FAKE_BUFF_SYS_PADDR, IO_BUFFER_SIZE);
+    void*   fake_write_buff_pa = (unsigned char*) FAKE_BUFF_SYS_PADDR + IO_BUFFER_SIZE;
+    void*   fake_write_buff_va = (unsigned char*) ioremap_wc(FAKE_BUFF_SYS_PADDR + IO_BUFFER_SIZE, IO_BUFFER_SIZE);
+    
+    void*   tmp_FRB_PA = fake_read_buff_pa;
+    void*   tmp_FRB_VA = fake_read_buff_va;
+   
+    write_count = 0; 
+    io_count = 0;
+    write_enable = 0;
+
+    while (1)
+    {
+        if (control_key != 0)
+        {
+            printk("HV_PERF module starts to generate I/O requests onto HVDIMM directly!!\n");
+
+            break;
+        }
+        else
+        {
+            msleep(1000); //sleep for 1 second.
+        }
+    }
+
+    for (i = 0; i < TOTAL_IOS; i++) 
+    {
+        
+        if (io_count == 0)
+        { 
+            startTime = ktime_get();  
+        }  
+
+        io_count++;
+
+        if (write_enable != 0) { 
+            result = bsm_write_command_emmc(0, REQ_SIZE, (unsigned int)(pmem_off), tmp_FRB_PA, 
+                                                tmp_FRB_VA, 0, NULL); 
+            write_count++; 
+            
+            tmp_FRB_PA += REAL_REQ_SIZE; 
+            tmp_FRB_VA += REAL_REQ_SIZE;
+
+            if (tmp_FRB_PA >= fake_read_buff_pa + IO_BUFFER_SIZE)
+            {
+                tmp_FRB_PA = fake_read_buff_pa;
+            } 
+            
+            if (tmp_FRB_VA >= fake_read_buff_va + IO_BUFFER_SIZE)
+            {
+                tmp_FRB_VA = fake_read_buff_va;
+            }
+        }
+        else { 
+            result = bsm_read_command_emmc(0, REQ_SIZE, (unsigned int)(pmem_off), fake_write_buff_pa, 
+                                                fake_write_buff_va, 0, NULL);
+        }
+        
+        pmem_off += REQ_OFFSET;
+
+        if (write_count * 100 > io_count * WRITE_RATIO)
+        {
+            write_enable = 0;
+        }
+        else
+        {
+            write_enable = 1;
+        }
+
+        if (result < 0) 
+        { 
+            printk("bsm_write_command_emmc error\n");
+        } 
+        
+        timeTaken_us = ktime_us_delta(ktime_get(), startTime);
+
+        if (timeTaken_us >= 1000000) // 100 msec
+        {
+            do_gettimeofday(&current_time);
+
+            local_time = (u32)(current_time.tv_sec - (sys_tz.tz_minuteswest * 60));
+            time_to_tm(local_time, 0, &broken);
+          
+            sprintf(log_buf[log_index], "%u, %u\n", 
+                      (unsigned int) (3600*broken.tm_hour + 60*broken.tm_min + broken.tm_sec),  
+                      (unsigned int)(io_count >> 3));
+
+            log_index++;
+            
+            io_count = 0;
+            write_count = 0;
+        }
+    }
+
+    iounmap(fake_read_buff_va);
+    iounmap(fake_write_buff_va);
+
+    printk(KERN_INFO "Thread Stopping\n");
+    do_exit(0);
+
+    return 0;
+}
+#endif
+#if 0
+static int io_generator(void)
+{ 
+    phys_addr_t pmem_off =  HV_OFFSET;
+    unsigned int i,  write_count, io_count; 
+    int result,  write_enable;
+    ktime_t startTime;
+    s64 timeTaken_us;
+    unsigned int write_ratio;
+
+    void*   fake_read_buff_pa = (unsigned char*) FAKE_BUFF_SYS_PADDR;
+    void*   fake_read_buff_va = (unsigned char*) ioremap_cache(FAKE_BUFF_SYS_PADDR, IO_BUFFER_SIZE);
+    void*   fake_write_buff_pa = (unsigned char*) FAKE_BUFF_SYS_PADDR + IO_BUFFER_SIZE;
+    void*   fake_write_buff_va = (unsigned char*) ioremap_wc(FAKE_BUFF_SYS_PADDR + IO_BUFFER_SIZE, IO_BUFFER_SIZE);
+    
+    void*   tmp_FRB_PA = fake_read_buff_pa;
+    void*   tmp_FRB_VA = fake_read_buff_va;
+   
+    write_count = 0; 
+    io_count = 0;
+    write_enable = 0;
+
+    for (write_ratio = 0; write_ratio <= 100; write_ratio += 10)
+    {
+
+        for (i = 0; i < TOTAL_IOS; i++) 
+        { 
+            if (io_count == 0)
+            { 
+                startTime = ktime_get();  
+            }  
+
+            io_count++; 
+           
+            if (write_enable != 0) { 
+                result = bsm_write_command_emmc(0, REQ_SIZE, (unsigned int)(pmem_off), tmp_FRB_PA, 
+                                                 tmp_FRB_VA, 0, NULL); 
+                write_count++; 
+                
+                tmp_FRB_PA += REAL_REQ_SIZE; 
+                tmp_FRB_VA += REAL_REQ_SIZE;
+
+                if (tmp_FRB_PA >= fake_read_buff_pa + IO_BUFFER_SIZE)
+                {
+                    tmp_FRB_PA = fake_read_buff_pa;
+                } 
+            
+                if (tmp_FRB_VA >= fake_read_buff_va + IO_BUFFER_SIZE)
+                {
+                    tmp_FRB_VA = fake_read_buff_va;
+                }
+            }
+            else { 
+                result = bsm_read_command_emmc(0, REQ_SIZE, (unsigned int)(pmem_off), fake_write_buff_pa, 
+                        fake_write_buff_va, 0, NULL);
+            }
+
+            pmem_off += REQ_OFFSET; 
+            
+            if (write_count * 100 > io_count * write_ratio)
+            {
+                write_enable = 0;
+            }
+            else
+            {
+                write_enable = 1;
+            }
+
+            if (result < 0) 
+            { 
+                printk("bsm_write_command_emmc error\n");
+            } 
+        
+            timeTaken_us = ktime_us_delta(ktime_get(), startTime);
+
+            if (timeTaken_us >= 1000000) // 100 msec
+            {
+
+                printk("BSM MIX ( write_ratio: %u )  IOPS: %u (write_count: %u ), delay: %lld us\n", 
+                             write_ratio, io_count, write_count, timeTaken_us);
+
+                io_count = 0;
+                write_count = 0; 
+            } 
+        }
+    }
+
+    iounmap(fake_read_buff_va);
+    iounmap(fake_write_buff_va);
+
+    printk(KERN_INFO "Thread Stopping\n");
+    do_exit(0);
+
+    return 0;
+}
+#endif
+
+int hvPerf_init(void)
+{ 
+    printk (KERN_INFO "Creating thread\n");
+
+    log_file = debugfs_create_file( "hvperf_log", S_IRUSR, NULL, NULL, &fops);
+    control_file = debugfs_create_u32 ("start_HV_IO", 0666, NULL, &control_key);
+    thread_st = kthread_run(io_generator, NULL, "hv_perf");
+   
+    if (thread_st)
+        printk(KERN_INFO "Thread created sucessfully\n");
+    else
+        printk(KERN_ERR "Thread creation failed\n");
+
+  
+    return 0;
+}
+
+int hvPerf_exit(void)
+{ 
+    printk(KERN_INFO "Cleaning up\n");
+
+    debugfs_remove(log_file);
+    debugfs_remove(control_file);
+
+#if 0
+    if (thread_st)
+    {
+        kthread_stop(thread_st);
+        printk(KERN_INFO "Thread stopped\n");
+    }
+#endif
+
+    printk("hvPerf module exit\n");
+
+    return 0;
+}
+
+module_init(hvPerf_init);
+module_exit(hvPerf_exit);
+
+MODULE_LICENSE("Dual BSD/GPL");
+
