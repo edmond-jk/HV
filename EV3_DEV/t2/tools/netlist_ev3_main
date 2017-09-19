@@ -1,0 +1,117 @@
+#!/bin/bash
+# 
+# chkconfig: 2345 90 10
+# description: Loads and creates dev nodes the Netlist EXPRESSvault 3 \
+#              device driver
+# To load at start-up
+# Put this script into /etc/init.d
+# As root chkconfig --add netlist_ev3
+
+# Source function library
+. /etc/rc.d/init.d/functions
+
+RETVAL=0
+
+# Create as many nodes as needed
+# max_cards starts off as 1, but we query the driver to get the actual number 
+# during the first iteration
+minor_num=0
+minor_num_char=0
+minor_letter=a
+cur_dev=0
+max_cards=1
+
+# Create nodes
+char_major_no_chr=`cat /proc/devices | grep ev3map | awk '{print $1}'`
+char_major_no_blk=`cat /proc/devices | grep ev3mem | awk '{print $1}'`
+
+start()
+{
+    
+while [ $cur_dev -lt $max_cards ]
+do
+    minor_num_char=$(( $minor_num*16 ))
+    echo Creating character device node with major number $char_major_no_chr minor number ${minor_num_char}
+    if [ ! -e /dev/ev3map${minor_num_char} ] 
+    then
+        mknod /dev/ev3map${minor_num_char} c $char_major_no_chr ${minor_num_char}
+    fi
+    echo Creating block device node with major number $char_major_no_blk minor number ${minor_num}
+    if [ ! -e /dev/ev3mem${minor_letter} ] 
+    then
+        mknod /dev/ev3mem${minor_letter} b $char_major_no_blk ${minor_num}
+    fi
+
+    if [ -e /dev/ev3mem${minor_letter} ] 
+    then 
+      partprobe /dev/ev3mem${minor_letter}
+    fi
+
+    if [ $cur_dev -eq 0 ]
+    then 
+    # At this point we know that we have at least one ev3mem or ev3map device
+    # We will query the driver to find out how many cards there are and if
+    # more than one card is available, we will make nodes for those cards.
+    # We will try using the character driver first. If that fails try the block driver.
+    # If the block driver fails, set max_cards to 1 by default.
+
+    max_cards=`ev3util /dev/ev3map0 noprompt get_model | grep -a "Cards detected" | awk -F': ' '{ print $2 }' `
+    result=${PIPESTATUS[0]}
+    if [ $result != 0 ]
+    then
+        max_cards=`ev3util /dev/ev3mema noprompt get_model | grep -a "Cards detected" | awk -F': ' '{ print $2 }' `
+        result=${PIPESTATUS[0]}
+        if [ $result != 0 ]
+        then
+        max_cards=1
+        fi
+    fi 
+    
+    echo Num cards = $max_cards
+    fi
+
+    # Next card
+    cur_dev=$(( $cur_dev+1 ))
+
+    # Increment the minor number and letter
+    minor_num=$(( $minor_num+1 ))
+    minor_letter=$(echo $minor_letter | tr 'a-y' 'b-z')
+done
+}
+
+stop()
+{
+    echo "Stopping NETLIST EV3"
+}
+
+reload()
+{
+    echo "Reloading NETLIST EV3"
+}
+
+case "$1" in
+        start)
+                start
+                ;;
+        stop)
+                stop
+                ;;
+        restart)
+                stop
+                start
+                ;;
+        reload)
+                reload
+                ;;
+
+        status)
+                ;;
+        *)
+                echo $"Usage: $0 {start|stop|restart|reload|status}"
+                RETVAL=2
+esac
+
+echo "Netlist config complete"
+
+exit $RETVAL
+

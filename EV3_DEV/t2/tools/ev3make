@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# This script compiles and loads the driver.
+# Change current directory to the tools directory of the release that is to be 
+# compiled and installed, then execute this script.
+# If now options are passed then the default compile options are used.
+# If options are passed those are passed to the "make" utility
+
+sync
+cd ..
+make clean
+make $1 $2 $3
+make install
+cd app
+make clean
+make $1 $2 $3
+make install
+sync
+echo "Compile and installation of driver and command-line utility is complete"
+echo "Use ev3load to load the driver"
+
+
+

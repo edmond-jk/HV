@@ -1,0 +1,16 @@
+#
+# Netlist Express Vault 3
+#
+
+menu "Netlist Express Vault 3"
+
+config EV3_NETLIST
+	tristate "Netlist EV3 SSD disk"
+	depends on MODULES
+	default y if MODULES
+	help
+		Say Y if you want to have a device driver for Netlist EV3,
+		for example ev3mem* and ev3map*
+endmenu
+
+

@@ -304,7 +304,7 @@ static int io_generator(void)
                         (3600*broken.tm_hour + 60*broken.tm_min + broken.tm_sec),  
                         io_count >> 3);
 
-            printk("Hours:%u, Min:%u, Seconds:%u\n", broken.tm_hour, broken.tm_min, broken.tm_sec);
+          //  printk("Hours:%u, Min:%u, Seconds:%u\n", broken.tm_hour, broken.tm_min, broken.tm_sec);
 
             log_index++;
             
