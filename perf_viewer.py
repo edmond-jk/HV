@@ -1,4 +1,5 @@
 import csv
+#import matplotlib
 from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
@@ -7,10 +8,8 @@ import matplotlib.animation as animation
 fig = plt.figure()
 ax1 = fig.add_subplot(1,1,1)
 
-ax1.set_xlabel('seconds')
-ax1.set_ylabel('MBPS')
-
-ax1.set_title('Performance')
+#matplotlib.rcParams['font.sans-serif'] = "Comic Sans MS"
+#matplotlib.rcParams['font.family'] = "sans-Georgia"
 
 #-----------------------------------------------------------------
 def keep_line(line):
@@ -121,9 +120,10 @@ def animate_graph(i):
     ax1.plot(times_hv, throughputs_hv, 'r', linewidth=3, label='HVDIMM PERFORMANCE')
     ax1.plot(times_vd, throughputs_vd, 'g', linewidth=3, label='VDBENCH') 
     ax1.plot(times_mm, throughputs_mm, 'b', linewidth=3, label='Intel Monitor') 
-    ax1.set_xlabel('Time')
-    ax1.set_ylabel('MBPS') 
-    ax1.set_title('IO Performance')
+    ax1.set_xlabel('Time', fontsize=16)
+    ax1.set_ylabel('MBPS', fontsize=16) 
+    ax1.set_title('(HVDIMM, VDBENCH, INTEL PCM) Bandwidth/Throughput', fontsize=18)
+    plt.grid()   
 
    
 
