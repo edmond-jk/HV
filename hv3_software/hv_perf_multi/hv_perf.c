@@ -25,10 +25,10 @@
 
 #define HV_OFFSET                   0x80000000  // 1GB offset in # of sectors
 
-#define TOTAL_TIME                  120          // seconds
+#define TOTAL_TIME                  300          // seconds
 #define REQ_OFFSET                  256			// number of blocks, where block size is 512 Byte 
 #define REAL_REQ_SIZE               512 * REQ_OFFSET
-#define WRITE_RATIO                 67 
+#define WRITE_RATIO                 100			//BSM_WRITE --> MEMORY READ 
 
 
 #define HV_MMIO_SIZE                0x100000    // 1MB in Bytes
@@ -141,7 +141,7 @@ static int worker_fn(void *data)
         }
     }
 
-    write_enable = 0;
+    write_enable = 1;
     startTime = ktime_get();  
     while (!kthread_should_stop()) // 1 sec
     { 

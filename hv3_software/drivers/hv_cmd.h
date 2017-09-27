@@ -27,10 +27,15 @@
 //MK1006#define MMLS_WRITE	0x20
 //MK1006-begin
 // Temp change to test the two new commands: TBM_READ & TBM_WRITE
-//MK0324#define MMLS_READ	0x90	// TBM_READ
-//MK0324#define MMLS_WRITE	0x80	// TBM_WRITE
+
+#if 0 //1: TBM READ/WRITE, 0:eMMC READ/WRITE
+#define MMLS_READ	0x90	// TBM_READ
+#define MMLS_WRITE	0x80	// TBM_WRITE
+#else
 #define MMLS_READ	0x10	//MK0324 - FPGA expects this command for eMMC operation
 #define MMLS_WRITE	0x20	//MK0324 - FPGA expects this command for eMMC operation
+#endif
+
 //MK1006-end
 #define PAGE_SWAP	0x50
 #define BSM_BACKUP	0x60
