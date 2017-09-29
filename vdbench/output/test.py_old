@@ -1,0 +1,60 @@
+import csv
+from datetime import datetime
+import matplotlib.pyplot as plt
+
+
+#-----------------------------------------------------------------
+def keep_line(line):
+		return len(line.strip()) > 0 and not line.startswith("#")
+
+#-----------------------------------------------------------------
+def filter_lines(reader):
+		lines = []
+		
+		next(reader)
+		for line in reader:
+				if keep_line(line):
+						lines.append(line)
+						
+		return lines
+#----------------------------------------------------------------
+def parse_workouts(rows):
+		workouts = []
+		for row in rows:
+				interval = int(row[3])
+				throughput = float(row[5])
+
+				workouts.append([interval, throughput])
+
+		return workouts
+#----------------------------------------------------------------
+def extract_intervals(workouts):
+		intervals = []
+
+		for w in workouts:
+				intervals.append(w[0])
+
+		return intervals
+#----------------------------------------------------------------
+def extract_throughputs(workouts):
+		throughputs = []
+
+		for w in workouts:
+				throughputs.append(w[1])
+
+		return throughputs
+
+reader = file("flatfile.html","r")
+lines = filter_lines(reader)
+csv_reader = csv.reader(lines, delimiter=' ',skipinitialspace=True)
+
+workouts = parse_workouts(csv_reader)
+intervals = extract_intervals(workouts)
+throughputs = extract_throughputs(workouts)
+
+plt.plot(intervals, throughputs)
+plt.show()
+
+for w in workouts:
+		print w 
+

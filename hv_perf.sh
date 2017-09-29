@@ -7,24 +7,29 @@ NUM_THREADS=1
 READ_RATIO=100
 ELAPSED_TIME=120
 
+for KILLPID in `ps ax | grep 'pcm-memory.x' | awk ' { print $1;}'`; 
+do
+       	kill -9 $KILLPID;
+done
+
 pushd /home/lab/Tools/hv3_software/drivers
+rmmod hvperf.ko
 sh scripts/insmod.sh
 popd
 
 pushd /home/lab/Tools/hv3_software/hv_perf_multi
-rmmod hvperf.ko
 ./ignore.sh
 insmod hvperf.ko
 popd
 
 pushd /home/lab/work/IntelPerformanceCounterMonitor
-gnome-terminal -e "pcm-memory.x 1 -csv=../mem_traffic.txt" --title "INTEL Performance Counter Monitor" --geometry=80x24+100+100
+gnome-terminal -e "pcm-memory.x 1 -csv=../mem_traffic.txt" --title "INTEL Performance Counter Monitor" --geometry=80x24+0+100
 popd
 
 pushd /home/lab/Tools/vdbench
 
 rm test_log.txt
-gnome-terminal --title "vdbench" --geometry=80x24+100+100 -x bash -c "vdbench -m 2 -f read_traffic >> test_log.txt"   
+gnome-terminal --title "vdbench" --geometry=80x24+0+100 -x bash -c "vdbench -m 2 -f read_traffic >> test_log.txt"   
 popd
 
 gnome-terminal -e "python perf_viewer.py" --title "Netlist Performance Viewer" --geometry 100x24+910+0
@@ -46,9 +51,15 @@ do
 
 	echo $SD > $FILE_NAME
 	echo $WD >> $FILE_NAME
-	echo $RD >> $FILE_NAME
+	echo $RD >> $FILE_NAME 
 	
-	ps -ef | grep java | grep -v grep | awk '{print $2}' | xargs kill -9
-       	gnome-terminal --title "vdbench" --geometry=80x24+100+100 -x bash -c "vdbench -m 2 -f run_vdbench >> test_log.txt"   
+#	for KILLPID in `ps ax | grep 'java' | awk ' { print $1;}'`;
+#       	do
+#	       	kill -9 $KILLPID;
+#       	done 
+
+	ps -ef | grep 'java' | grep -v grep | awk '{print $2}' | xargs kill -9	
+
+	gnome-terminal --title "vdbench" --geometry=80x24+100+100 -x bash -c "vdbench -m 2 -f run_vdbench >> test_log.txt"   
 done
 popd 

@@ -1,0 +1,1356 @@
+
+
+Copyright (c) 2000, 2016, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50406 Wed July 20 15:49:52 MDT 2016
+For documentation, see 'vdbench.pdf'.
+
+17:54:55.977 input argument scanned: '-m2'
+17:54:55.980 input argument scanned: '-fmixTraffic'
+17:54:56.168 Starting slave: /home/lab/Tools/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-170907-17.54.55.931 -l localhost-0 -p 5570   
+17:54:56.188 Starting slave: /home/lab/Tools/vdbench/vdbench SlaveJvm -m localhost -n localhost-11-170907-17.54.55.931 -l localhost-1 -p 5570   
+17:54:56.521 All slaves are now connected
+17:54:58.001 Starting RD=run1; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:54:59.080         1   63785.00  7973.13  131072 100.00    0.092    0.092    0.000    0.336    0.016   5.9   9.8   6.7
+17:55:00.013         2  104070.00 13008.75  131072 100.00    0.092    0.092    0.000    0.353    0.015   9.6  26.1  24.8
+17:55:01.053         3  107811.00 13476.38  131072 100.00    0.092    0.092    0.000    0.303    0.015   9.9  25.8  24.8
+17:55:02.003 
+17:55:02.004 Message from slave localhost-0: 
+17:55:02.004 New messages found on /var/adm/messages. Do they belong to you?
+17:55:02.004 /var/log/messages: Sep  7 17:55:01 localhost systemd: Created slice user-988.slice.
+17:55:02.004 /var/log/messages: Sep  7 17:55:01 localhost systemd: Starting user-988.slice.
+17:55:02.004 /var/log/messages: Sep  7 17:55:01 localhost systemd: Started Session 8 of user pcp.
+17:55:02.004 /var/log/messages: Sep  7 17:55:01 localhost systemd: Starting Session 8 of user pcp.
+17:55:02.004 /var/log/messages: Sep  7 17:55:01 localhost systemd: Removed slice user-988.slice.
+17:55:02.004 /var/log/messages: Sep  7 17:55:01 localhost systemd: Stopping user-988.slice.
+17:55:02.004 
+17:55:02.094         4  107510.00 13438.75  131072 100.00    0.094    0.094    0.000    1.009    0.020  10.1  26.7  25.4
+17:55:03.052         5  106164.00 13270.50  131072 100.00    0.092    0.092    0.000    0.375    0.015   9.7  25.4  24.9
+17:55:04.052         6  108303.00 13537.88  131072 100.00    0.092    0.092    0.000    0.248    0.015   9.9  25.4  24.8
+17:55:05.052         7  108099.00 13512.38  131072 100.00    0.092    0.092    0.000    0.312    0.015   9.9  25.5  24.9
+17:55:06.053         8  108200.00 13525.00  131072 100.00    0.091    0.091    0.000    0.294    0.016   9.9  25.9  24.7
+17:55:07.052         9  108500.00 13562.50  131072 100.00    0.091    0.091    0.000    0.215    0.015   9.9  25.4  24.9
+17:55:08.052        10  108065.00 13508.13  131072 100.00    0.092    0.092    0.000    0.319    0.015   9.9  25.5  24.8
+17:55:09.052        11  108276.00 13534.50  131072 100.00    0.092    0.092    0.000    0.240    0.015   9.9  25.5  24.9
+17:55:10.053        12  108408.00 13551.00  131072 100.00    0.092    0.092    0.000    0.327    0.015   9.9  25.4  24.9
+17:55:11.052        13  108665.00 13583.13  131072 100.00    0.091    0.091    0.000    0.259    0.015   9.9  25.3  24.8
+17:55:12.052        14  108323.00 13540.38  131072 100.00    0.092    0.092    0.000    0.259    0.015   9.9  25.5  24.9
+17:55:13.053        15  108528.00 13566.00  131072 100.00    0.091    0.091    0.000    0.218    0.015   9.9  25.3  24.8
+17:55:14.052        16  108350.00 13543.75  131072 100.00    0.092    0.092    0.000    0.424    0.015   9.9  25.4  24.8
+17:55:15.051        17  108312.00 13539.00  131072 100.00    0.091    0.091    0.000    0.218    0.015   9.9  25.6  24.9
+17:55:16.051        18  108360.00 13545.00  131072 100.00    0.092    0.092    0.000    0.239    0.015   9.9  25.6  24.8
+17:55:17.051        19  106986.00 13373.25  131072 100.00    0.093    0.093    0.000    0.181    0.015   9.9  26.3  24.9
+17:55:18.057        20  108540.00 13567.50  131072 100.00    0.091    0.091    0.000    0.261    0.015   9.9  25.4  25.0
+17:55:18.065  avg_2-20  105662.75 13207.84  131072 100.00    0.092    0.092    0.000    1.009    0.015   9.7  23.8  22.8
+17:55:19.001 Starting RD=run2; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:55:20.012         1   58536.00  7317.00  131072  90.27    0.102    0.104    0.087    0.432    0.025   6.0  11.9   9.1
+17:55:21.051         2   95034.00 11879.25  131072  89.96    0.102    0.104    0.087    0.413    0.021   9.7  26.0  24.4
+17:55:22.049 
+17:55:22.050 Message from slave localhost-0: 
+17:55:22.050 New messages found on /var/adm/messages. Do they belong to you?
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.050 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051         3   91114.00 11389.25  131072  89.78    0.107    0.109    0.090    0.387    0.021   9.7  27.9  24.6
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.051 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 /var/log/messages: Sep  7 17:55:18 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:22.052 
+17:55:23.051         4   91654.00 11456.75  131072  90.03    0.106    0.108    0.089    0.411    0.021   9.7  27.9  24.5
+17:55:24.050         5   95821.00 11977.63  131072  89.94    0.102    0.103    0.087    0.523    0.020   9.8  25.3  24.4
+17:55:25.050         6   95807.00 11975.88  131072  89.97    0.102    0.103    0.087    0.577    0.020   9.8  25.4  24.4
+17:55:26.051         7   96038.00 12004.75  131072  90.19    0.102    0.103    0.086    0.252    0.020   9.8  25.5  24.5
+17:55:27.051         8   92616.00 11577.00  131072  89.98    0.105    0.107    0.089    1.163    0.043   9.7  26.3  24.4
+17:55:28.050         9   95613.00 11951.63  131072  89.94    0.102    0.104    0.086    0.542    0.020   9.8  25.5  24.5
+17:55:29.051        10   94252.00 11781.50  131072  89.72    0.101    0.103    0.086    0.315    0.023   9.5  27.6  24.1
+17:55:30.051        11   91640.00 11455.00  131072  89.89    0.106    0.108    0.090    0.522    0.024   9.8  28.0  24.9
+17:55:31.050        12   94618.00 11827.25  131072  89.93    0.103    0.105    0.087    0.501    0.021   9.8  26.4  24.6
+17:55:32.051        13   94604.00 11825.50  131072  89.88    0.103    0.105    0.088    0.496    0.022   9.8  26.2  24.6
+17:55:33.050        14   95847.00 11980.88  131072  90.27    0.102    0.103    0.086    0.284    0.020   9.7  25.5  24.4
+17:55:34.050        15   95909.00 11988.63  131072  90.08    0.102    0.103    0.086    0.311    0.020   9.8  25.3  24.4
+17:55:35.051        16   96000.00 12000.00  131072  90.01    0.102    0.103    0.086    0.280    0.020   9.8  25.4  24.4
+17:55:36.051        17   95830.00 11978.75  131072  90.02    0.102    0.103    0.087    0.326    0.020   9.8  25.4  24.5
+17:55:37.050        18   95930.00 11991.25  131072  90.05    0.102    0.103    0.086    0.279    0.020   9.7  25.4  24.4
+17:55:38.050        19   95714.00 11964.25  131072  89.85    0.102    0.104    0.086    0.345    0.020   9.8  25.3  24.4
+17:55:39.051        20   95506.00 11938.25  131072  89.95    0.101    0.102    0.086    0.349    0.022   9.6  26.7  24.2
+17:55:39.061  avg_2-20   92904.15 11613.02  131072  89.98    0.103    0.104    0.087    1.163    0.023   9.5  24.8  23.0
+17:55:40.000 Starting RD=run3; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:55:41.011         1   56129.00  7016.13  131072  80.06    0.111    0.113    0.102    0.357    0.027   6.2  11.2   9.0
+17:55:42.050         2   90322.00 11290.25  131072  80.11    0.111    0.114    0.102    0.261    0.025  10.0  25.4  24.2
+17:55:42.139 
+17:55:42.139 Message from slave localhost-0: 
+17:55:42.140 New messages found on /var/adm/messages. Do they belong to you?
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.140 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.141 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.142 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.143 /var/log/messages: Sep  7 17:55:39 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:55:42.143 
+17:55:43.050         3   82950.00 10368.75  131072  80.30    0.115    0.117    0.104    2.523    0.025   9.5  27.0  24.3
+17:55:44.050         4   85319.00 10664.88  131072  80.18    0.111    0.114    0.101    0.528    0.023   9.5  25.3  24.2
+17:55:45.050         5   86917.00 10864.63  131072  80.14    0.111    0.114    0.102    0.597    0.023   9.7  25.4  24.3
+17:55:46.050         6   87031.00 10878.88  131072  80.11    0.111    0.114    0.102    0.638    0.023   9.7  25.3  24.3
+17:55:47.050         7   86957.00 10869.63  131072  79.96    0.111    0.114    0.102    0.569    0.023   9.7  25.3  24.3
+17:55:48.049         8   86956.00 10869.50  131072  80.09    0.111    0.114    0.102    0.683    0.023   9.7  25.4  24.4
+17:55:49.050         9   86642.00 10830.25  131072  79.80    0.112    0.114    0.102    0.585    0.023   9.7  25.4  24.3
+17:55:50.050        10   85840.00 10730.00  131072  79.97    0.113    0.115    0.103    0.648    0.023   9.7  26.1  24.3
+17:55:51.049        11   86657.00 10832.13  131072  80.09    0.109    0.111    0.100    0.366    0.025   9.5  27.3  23.7
+17:55:52.049        12   86879.00 10859.88  131072  79.98    0.111    0.113    0.102    0.261    0.025   9.7  25.3  24.1
+17:55:53.049        13   87197.00 10899.63  131072  80.21    0.111    0.113    0.102    0.447    0.023   9.7  25.3  24.2
+17:55:54.051        14   87112.00 10889.00  131072  80.22    0.111    0.114    0.102    0.362    0.023   9.7  25.4  24.3
+17:55:55.049        15   87028.00 10878.50  131072  80.22    0.111    0.114    0.101    0.405    0.023   9.7  25.3  24.3
+17:55:56.051        16   87062.00 10882.75  131072  80.16    0.111    0.114    0.102    0.321    0.023   9.7  25.4  24.4
+17:55:57.050        17   84814.00 10601.75  131072  79.70    0.114    0.117    0.104    0.379    0.024   9.7  27.2  24.3
+17:55:58.050        18   87108.00 10888.50  131072  80.28    0.111    0.114    0.101    0.312    0.023   9.7  25.3  24.3
+17:55:59.050        19   86964.00 10870.50  131072  80.02    0.112    0.114    0.102    0.290    0.023   9.7  25.4  24.3
+17:56:00.051        20   86911.00 10863.88  131072  80.12    0.112    0.114    0.102    1.159    0.023   9.7  25.4  24.4
+17:56:00.060  avg_2-20   85139.75 10642.47  131072  80.09    0.112    0.114    0.102    2.523    0.024   9.5  24.3  22.8
+17:56:01.001 Starting RD=run4; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:56:02.009         1   52170.00  6521.25  131072  69.85    0.120    0.120    0.120    0.673    0.027   6.3  11.5   9.0
+17:56:02.219 
+17:56:02.219 Message from slave localhost-0: 
+17:56:02.219 New messages found on /var/adm/messages. Do they belong to you?
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.219 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.220 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.221 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.222 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.223 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 /var/log/messages: Sep  7 17:56:00 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:02.224 
+17:56:03.048         2   78795.00  9849.38  131072  70.04    0.121    0.122    0.121    0.599    0.026   9.6  25.7  24.1
+17:56:04.049         3   79809.00  9976.13  131072  70.21    0.120    0.121    0.120    0.682    0.024   9.6  25.3  24.0
+17:56:05.050         4   79453.00  9931.63  131072  69.99    0.121    0.121    0.120    0.602    0.023   9.6  25.5  24.1
+17:56:06.049         5   79547.00  9943.38  131072  70.15    0.121    0.121    0.119    0.588    0.023   9.6  25.5  24.2
+17:56:07.048         6   79759.00  9969.88  131072  70.14    0.121    0.121    0.119    0.551    0.023   9.6  25.3  24.1
+17:56:08.049         7   79738.00  9967.25  131072  70.08    0.121    0.121    0.120    0.588    0.023   9.6  25.3  24.1
+17:56:09.049         8   79349.00  9918.63  131072  69.82    0.121    0.122    0.120    0.644    0.023   9.6  25.4  24.1
+17:56:10.048         9   79631.00  9953.88  131072  70.02    0.121    0.121    0.120    0.563    0.023   9.6  25.3  24.0
+17:56:11.049        10   79831.00  9978.88  131072  70.18    0.120    0.121    0.119    0.615    0.023   9.6  25.3  24.1
+17:56:12.048        11   79461.00  9932.63  131072  69.83    0.121    0.121    0.120    0.624    0.023   9.6  25.3  24.2
+17:56:13.051        12   79793.00  9974.13  131072  70.06    0.119    0.119    0.118    0.680    0.025   9.5  26.5  23.7
+17:56:14.048        13   79387.00  9923.38  131072  69.88    0.121    0.121    0.120    0.637    0.023   9.6  25.3  24.1
+17:56:15.049        14   79617.00  9952.13  131072  70.12    0.121    0.121    0.120    0.837    0.023   9.6  25.5  24.1
+17:56:16.048        15   79403.00  9925.38  131072  69.68    0.121    0.121    0.120    0.537    0.023   9.6  25.3  24.0
+17:56:17.049        16   76118.00  9514.75  131072  69.80    0.126    0.127    0.125    0.719    0.024   9.6  27.7  24.2
+17:56:18.048        17   78047.00  9755.88  131072  70.18    0.123    0.124    0.122    0.684    0.024   9.6  26.3  24.1
+17:56:19.050        18   79361.00  9920.13  131072  69.77    0.121    0.122    0.120    0.644    0.023   9.6  25.5  24.2
+17:56:20.048        19   79740.00  9967.50  131072  70.23    0.120    0.121    0.119    0.575    0.024   9.6  25.4  24.1
+17:56:21.051        20   79970.00  9996.25  131072  70.53    0.120    0.121    0.119    0.599    0.023   9.6  25.3  24.1
+17:56:21.060  avg_2-20   77948.95  9743.62  131072  70.03    0.121    0.121    0.120    0.837    0.024   9.4  24.3  22.7
+17:56:22.000 Starting RD=run5; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+17:56:22.200 
+17:56:22.200 Message from slave localhost-0: 
+17:56:22.200 New messages found on /var/adm/messages. Do they belong to you?
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.200 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.201 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 /var/log/messages: Sep  7 17:56:21 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:22.202 
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:56:23.008         1   49002.00  6125.25  131072  59.85    0.128    0.124    0.134    0.470    0.028   6.3  11.0   9.0
+17:56:24.049         2   73546.00  9193.25  131072  59.79    0.129    0.125    0.135    0.526    0.026   9.5  25.3  23.8
+17:56:25.049         3   73794.00  9224.25  131072  60.20    0.129    0.126    0.135    0.336    0.023   9.5  25.3  23.9
+17:56:26.049         4   73703.00  9212.88  131072  59.93    0.130    0.126    0.135    0.248    0.023   9.6  25.3  24.0
+17:56:27.052         5   76684.00  9585.50  131072  59.76    0.130    0.126    0.136    0.317    0.023  10.0  25.4  24.0
+17:56:28.049         6   70499.00  8812.38  131072  59.98    0.129    0.126    0.135    0.293    0.023   9.1  25.3  23.9
+17:56:29.048         7   73802.00  9225.25  131072  60.22    0.129    0.126    0.135    0.282    0.023   9.5  25.3  23.9
+17:56:30.048         8   73481.00  9185.13  131072  60.26    0.130    0.126    0.136    0.348    0.023   9.5  25.7  24.0
+17:56:31.049         9   73852.00  9231.50  131072  60.09    0.129    0.126    0.135    0.253    0.023   9.6  25.2  23.8
+17:56:32.049        10   73831.00  9228.88  131072  60.10    0.129    0.125    0.135    0.282    0.023   9.5  25.3  23.9
+17:56:33.048        11   73613.00  9201.63  131072  59.75    0.130    0.126    0.136    0.333    0.023   9.5  25.3  23.8
+17:56:34.048        12   73785.00  9223.13  131072  60.25    0.129    0.126    0.135    0.257    0.023   9.5  25.3  24.0
+17:56:35.048        13   73841.00  9230.13  131072  60.26    0.129    0.125    0.135    0.299    0.023   9.5  25.3  23.9
+17:56:36.049        14   73614.00  9201.75  131072  59.74    0.130    0.126    0.136    0.403    0.023   9.5  25.3  23.8
+17:56:37.048        15   73689.00  9211.13  131072  60.13    0.130    0.126    0.135    0.301    0.023   9.5  25.4  23.9
+17:56:38.049        16   73830.00  9228.75  131072  60.25    0.129    0.126    0.135    0.308    0.023   9.6  25.3  24.0
+17:56:39.048        17   73644.00  9205.50  131072  59.81    0.130    0.126    0.135    0.284    0.023   9.5  25.3  24.1
+17:56:40.049        18   73396.00  9174.50  131072  59.63    0.130    0.126    0.136    0.302    0.023   9.6  25.5  24.1
+17:56:41.048        19   73835.00  9229.38  131072  60.00    0.129    0.125    0.135    0.364    0.023   9.5  25.2  23.9
+17:56:42.050        20   73768.00  9221.00  131072  60.10    0.129    0.125    0.135    0.266    0.023   9.5  25.3  23.9
+17:56:42.058  avg_2-20   72460.45  9057.56  131072  60.01    0.129    0.126    0.135    0.526    0.023   9.4  24.0  22.5
+17:56:42.238 
+17:56:42.238 Message from slave localhost-0: 
+17:56:42.238 New messages found on /var/adm/messages. Do they belong to you?
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 /var/log/messages: Sep  7 17:56:42 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:56:42.238 
+17:56:43.000 Starting RD=run6; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:56:44.007         1   45995.00  5749.38  131072  49.79    0.134    0.125    0.143    0.380    0.027   6.2  10.5   8.9
+17:56:45.047         2   68944.00  8618.00  131072  49.77    0.135    0.126    0.144    0.258    0.026   9.3  25.3  23.3
+17:56:46.049         3   69043.00  8630.38  131072  50.15    0.136    0.127    0.145    0.568    0.026   9.4  25.3  23.4
+17:56:47.047         4   68973.00  8621.63  131072  50.18    0.138    0.128    0.147    0.589    0.022   9.5  25.4  23.7
+17:56:48.047         5   69172.00  8646.50  131072  50.32    0.137    0.128    0.147    0.521    0.022   9.5  25.3  23.8
+17:56:49.048         6   68903.00  8612.88  131072  49.77    0.138    0.128    0.147    0.466    0.022   9.5  25.3  23.8
+17:56:50.047         7   69137.00  8642.13  131072  50.24    0.137    0.128    0.147    0.523    0.023   9.5  25.3  23.8
+17:56:51.047         8   69010.00  8626.25  131072  50.13    0.137    0.128    0.147    0.345    0.022   9.5  25.3  23.9
+17:56:52.047         9   68876.00  8609.50  131072  50.00    0.138    0.129    0.147    0.520    0.022   9.5  25.4  23.9
+17:56:53.049        10   69078.00  8634.75  131072  50.02    0.137    0.128    0.147    0.556    0.022   9.5  25.3  23.9
+17:56:54.048        11   68904.00  8613.00  131072  49.93    0.138    0.128    0.147    0.611    0.022   9.5  25.3  23.7
+17:56:55.049        12   68931.00  8616.38  131072  50.05    0.138    0.129    0.147    0.593    0.023   9.5  25.4  23.9
+17:56:56.049        13   65382.00  8172.75  131072  50.40    0.146    0.136    0.155    0.661    0.024   9.5  27.6  24.0
+17:56:57.048        14   67779.00  8472.38  131072  50.20    0.137    0.128    0.147    0.555    0.027   9.3  27.3  23.3
+17:56:58.048        15   69184.00  8648.00  131072  50.21    0.137    0.128    0.147    0.518    0.023   9.5  25.3  24.0
+17:56:59.048        16   68981.00  8622.63  131072  50.13    0.138    0.128    0.147    0.570    0.022   9.5  25.3  23.7
+17:57:00.048        17   68889.00  8611.13  131072  49.99    0.138    0.129    0.147    0.550    0.022   9.5  25.3  23.9
+17:57:01.047        18   68708.00  8588.50  131072  50.09    0.138    0.129    0.147    0.562    0.022   9.5  25.5  23.7
+17:57:02.047        19   69134.00  8641.75  131072  50.08    0.137    0.128    0.147    0.491    0.022   9.5  25.3  23.9
+17:57:03.049        20   69011.00  8626.38  131072  50.02    0.138    0.128    0.147    0.570    0.022   9.5  25.3  23.7
+17:57:03.057  avg_2-20   67601.70  8450.21  131072  50.08    0.138    0.128    0.147    0.661    0.023   9.3  24.1  22.3
+17:57:04.000 Starting RD=run7; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:57:05.009         1   43884.00  5485.50  131072  39.96    0.142    0.129    0.150    0.379    0.026   6.2  10.6   8.9
+17:57:06.047         2   65326.00  8165.75  131072  40.19    0.143    0.130    0.151    0.286    0.024   9.3  25.3  23.3
+17:57:07.049         3   65335.00  8166.88  131072  40.09    0.145    0.131    0.154    0.263    0.021   9.5  25.3  23.7
+17:57:07.328 
+17:57:07.328 Message from slave localhost-0: 
+17:57:07.328 New messages found on /var/adm/messages. Do they belong to you?
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.328 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 /var/log/messages: Sep  7 17:57:03 localhost kernel: pmem_rw_page bd_block_size=0x1000 queuue_flags=0x5901000 nr_requests=0x80
+17:57:07.329 
+17:57:08.048         4   64685.00  8085.63  131072  40.16    0.146    0.132    0.155    0.251    0.022   9.4  25.6  23.6
+17:57:09.047         5   65511.00  8188.88  131072  40.16    0.144    0.131    0.153    0.246    0.021   9.5  25.3  23.7
+17:57:10.047         6   65295.00  8161.88  131072  40.04    0.145    0.131    0.154    0.261    0.021   9.4  25.3  23.8
+17:57:11.047         7   65417.00  8177.13  131072  40.16    0.144    0.131    0.153    0.233    0.021   9.5  25.2  23.7
+17:57:12.051         8   68076.00  8509.50  131072  40.01    0.145    0.131    0.154    0.313    0.021   9.8  25.3  23.8
+17:57:12.330 
+17:57:12.330 Message from slave localhost-0: 
+17:57:12.330 *
+17:57:12.330 *
+17:57:12.330 * Maximum of 1000 /var/log/messages messages reported. Shutting down scan.
+17:57:12.330 *
+17:57:12.330 * This maximum count can be overriden using 'messagescan=12345'
+17:57:12.330 *
+17:57:13.048         9   62537.00  7817.13  131072  40.41    0.145    0.131    0.154    0.252    0.022   9.1  25.4  23.7
+17:57:14.047        10   65267.00  8158.38  131072  39.81    0.145    0.131    0.154    0.237    0.021   9.4  25.3  23.7
+17:57:15.047        11   65046.00  8130.75  131072  39.64    0.145    0.132    0.154    0.245    0.021   9.4  25.6  23.7
+17:57:16.047        12   65457.00  8182.13  131072  40.26    0.144    0.131    0.154    0.232    0.021   9.5  25.3  23.8
+17:57:17.047        13   65244.00  8155.50  131072  40.02    0.145    0.131    0.154    0.246    0.021   9.4  25.5  23.6
+17:57:18.047        14   65507.00  8188.38  131072  40.36    0.144    0.131    0.153    0.227    0.021   9.5  25.2  23.6
+17:57:19.046        15   65003.00  8125.38  131072  39.78    0.144    0.131    0.154    0.284    0.023   9.4  26.0  23.8
+17:57:20.047        16   65518.00  8189.75  131072  40.33    0.144    0.131    0.154    0.277    0.021   9.4  25.2  23.6
+17:57:21.047        17   65317.00  8164.63  131072  40.01    0.145    0.131    0.154    0.231    0.021   9.5  25.3  23.6
+17:57:22.046        18   65059.00  8132.38  131072  39.96    0.145    0.131    0.154    0.246    0.021   9.4  25.4  23.7
+17:57:23.046        19   65267.00  8158.38  131072  39.76    0.145    0.131    0.154    0.253    0.021   9.4  25.3  23.6
+17:57:24.048        20   65445.00  8180.63  131072  39.89    0.144    0.130    0.154    0.234    0.021   9.4  25.2  23.6
+17:57:24.055  avg_2-20   64209.80  8026.23  131072  40.05    0.144    0.131    0.154    0.379    0.022   9.3  24.0  22.3
+17:57:25.001 Starting RD=run8; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:57:26.008         1   42131.00  5266.38  131072  29.75    0.150    0.134    0.157    0.554    0.021   6.3  10.7   9.0
+17:57:27.047         2   62400.00  7800.00  131072  29.50    0.150    0.134    0.157    0.586    0.019   9.4  25.2  23.4
+17:57:28.047         3   62513.00  7814.13  131072  29.98    0.150    0.134    0.157    0.508    0.020   9.4  25.3  23.5
+17:57:29.047         4   62709.00  7838.63  131072  30.11    0.150    0.133    0.157    0.549    0.020   9.4  25.2  23.5
+17:57:30.047         5   62551.00  7818.88  131072  29.95    0.150    0.134    0.157    0.556    0.020   9.4  25.2  23.5
+17:57:31.047         6   62517.00  7814.63  131072  29.66    0.150    0.134    0.157    0.374    0.019   9.4  25.3  23.7
+17:57:32.046         7   62556.00  7819.50  131072  29.93    0.150    0.134    0.157    0.596    0.020   9.4  25.2  23.4
+17:57:33.047         8   62748.00  7843.50  131072  30.26    0.150    0.134    0.157    0.469    0.020   9.4  25.2  23.5
+17:57:34.047         9   62613.00  7826.63  131072  30.65    0.150    0.134    0.157    0.567    0.020   9.4  25.3  23.6
+17:57:35.047        10   62543.00  7817.88  131072  29.77    0.150    0.134    0.157    0.572    0.020   9.4  25.3  23.5
+17:57:36.047        11   62455.00  7806.88  131072  29.72    0.150    0.134    0.157    0.550    0.020   9.4  25.3  23.5
+17:57:37.046        12   62267.00  7783.38  131072  29.76    0.151    0.134    0.158    0.469    0.020   9.4  25.6  23.6
+17:57:38.047        13   62554.00  7819.25  131072  29.70    0.150    0.134    0.157    0.479    0.019   9.4  25.2  23.4
+17:57:39.047        14   62595.00  7824.38  131072  29.95    0.150    0.133    0.157    0.600    0.020   9.4  25.2  23.6
+17:57:40.047        15   62561.00  7820.13  131072  29.96    0.150    0.134    0.157    0.363    0.020   9.4  25.3  23.7
+17:57:41.047        16   62483.00  7810.38  131072  29.82    0.150    0.134    0.157    0.528    0.020   9.4  25.2  23.5
+17:57:42.047        17   62532.00  7816.50  131072  30.13    0.150    0.134    0.157    0.480    0.019   9.4  25.3  23.7
+17:57:43.047        18   62559.00  7819.88  131072  30.00    0.150    0.134    0.157    0.512    0.019   9.4  25.3  23.6
+17:57:44.047        19   62641.00  7830.13  131072  30.12    0.150    0.133    0.157    0.580    0.020   9.4  25.2  23.6
+17:57:45.048        20   62609.00  7826.13  131072  30.03    0.150    0.134    0.157    0.565    0.020   9.4  25.3  23.6
+17:57:45.055  avg_2-20   61526.85  7690.86  131072  29.94    0.150    0.134    0.157    0.600    0.020   9.2  23.9  22.2
+17:57:46.000 Starting RD=run9; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:57:47.007         1   40969.00  5121.13  131072  20.06    0.148    0.134    0.151    0.345    0.022   6.1  10.7   8.7
+17:57:48.046         2   60895.00  7611.88  131072  19.88    0.149    0.136    0.153    0.271    0.021   9.1  25.2  22.7
+17:57:49.046         3   60865.00  7608.13  131072  19.92    0.150    0.136    0.154    0.278    0.022   9.1  25.2  22.9
+17:57:50.047         4   60900.00  7612.50  131072  20.00    0.152    0.136    0.156    1.201    0.020   9.2  25.2  23.1
+17:57:51.046         5   60678.00  7584.75  131072  19.99    0.154    0.137    0.158    0.277    0.017   9.3  25.2  23.4
+17:57:52.047         6   60688.00  7586.00  131072  19.94    0.154    0.137    0.158    0.256    0.017   9.4  25.3  23.5
+17:57:53.047         7   60750.00  7593.75  131072  20.02    0.154    0.137    0.158    0.326    0.017   9.3  25.2  23.4
+17:57:54.047         8   60704.00  7588.00  131072  19.85    0.154    0.137    0.158    0.281    0.017   9.4  25.2  23.4
+17:57:55.047         9   60590.00  7573.75  131072  19.96    0.154    0.137    0.158    0.252    0.017   9.3  25.3  23.6
+17:57:56.047        10   60750.00  7593.75  131072  20.22    0.154    0.137    0.158    0.335    0.017   9.4  25.2  23.4
+17:57:57.046        11   63168.00  7896.00  131072  20.06    0.154    0.137    0.158    0.262    0.017   9.7  25.2  23.4
+17:57:58.047        12   58090.00  7261.25  131072  19.88    0.154    0.137    0.159    0.282    0.017   9.0  25.5  23.5
+17:57:59.047        13   60739.00  7592.38  131072  19.98    0.154    0.137    0.158    0.362    0.017   9.4  25.2  23.4
+17:58:00.046        14   60743.00  7592.88  131072  20.15    0.154    0.137    0.158    0.248    0.017   9.3  25.2  23.5
+17:58:01.047        15   60584.00  7573.00  131072  19.98    0.154    0.138    0.159    0.256    0.017   9.4  25.3  23.5
+17:58:02.047        16   59760.00  7470.00  131072  20.00    0.154    0.137    0.159    0.418    0.023   9.2  27.1  23.6
+17:58:03.047        17   60608.00  7576.00  131072  19.89    0.154    0.137    0.158    0.334    0.017   9.3  25.3  23.3
+17:58:04.047        18   60577.00  7572.13  131072  19.72    0.154    0.138    0.158    0.264    0.017   9.4  25.2  23.5
+17:58:05.047        19   60563.00  7570.38  131072  19.87    0.154    0.137    0.158    0.255    0.017   9.3  25.2  23.4
+17:58:06.047        20   60684.00  7585.50  131072  20.15    0.154    0.137    0.158    0.335    0.017   9.4  25.2  23.4
+17:58:06.055  avg_2-20   59665.25  7458.16  131072  19.98    0.153    0.137    0.157    1.201    0.018   9.1  23.9  22.0
+17:58:07.001 Starting RD=run10; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:58:08.006         1   40119.00  5014.88  131072  10.19    0.146    0.135    0.148    0.281    0.020   5.9  11.1   8.4
+17:58:09.046         2   60247.00  7530.88  131072   9.89    0.145    0.134    0.147    0.268    0.019   8.8  25.2  21.9
+17:58:10.047         3   60133.00  7516.63  131072  10.06    0.148    0.136    0.149    0.273    0.020   8.9  25.2  22.2
+17:58:11.046         4   60165.00  7520.63  131072  10.00    0.148    0.137    0.149    0.321    0.020   8.9  25.2  22.1
+17:58:12.047         5   59948.00  7493.50  131072   9.89    0.152    0.139    0.154    0.819    0.019   9.1  25.2  22.7
+17:58:13.046         6   59524.00  7440.50  131072  10.09    0.156    0.141    0.158    0.313    0.015   9.3  25.3  23.4
+17:58:14.047         7   59692.00  7461.50  131072  10.14    0.156    0.141    0.157    0.345    0.014   9.3  25.2  23.3
+17:58:15.047         8   59630.00  7453.75  131072  10.03    0.156    0.141    0.158    0.351    0.014   9.3  25.2  23.4
+17:58:16.047         9   59609.00  7451.13  131072  10.00    0.156    0.141    0.158    0.329    0.014   9.3  25.3  23.3
+17:58:17.046        10   59595.00  7449.38  131072  10.09    0.156    0.141    0.157    0.337    0.014   9.3  25.2  23.2
+17:58:18.046        11   59589.00  7448.63  131072  10.06    0.156    0.141    0.158    0.328    0.014   9.3  25.2  23.4
+17:58:19.046        12   59473.00  7434.13  131072  10.07    0.156    0.140    0.158    0.357    0.015   9.3  25.4  23.5
+17:58:20.047        13   59495.00  7436.88  131072  10.07    0.156    0.141    0.158    0.358    0.015   9.3  25.6  23.3
+17:58:21.047        14   59663.00  7457.88  131072   9.87    0.156    0.140    0.157    0.338    0.014   9.3  25.2  23.3
+17:58:22.046        15   59528.00  7441.00  131072   9.71    0.156    0.140    0.158    0.377    0.014   9.3  25.2  23.3
+17:58:23.046        16   59687.00  7460.88  131072   9.87    0.156    0.141    0.157    0.324    0.014   9.3  25.2  23.3
+17:58:24.046        17   59714.00  7464.25  131072   9.95    0.155    0.140    0.156    7.974    0.036   9.2  25.5  23.2
+17:58:25.046        18   59620.00  7452.50  131072  10.01    0.156    0.140    0.158    0.378    0.014   9.3  25.2  23.3
+17:58:26.047        19   59701.00  7462.63  131072   9.92    0.156    0.140    0.157    0.497    0.014   9.3  25.2  23.3
+17:58:27.047        20   59545.00  7443.13  131072  10.02    0.156    0.141    0.158    0.339    0.014   9.3  25.2  23.3
+17:58:27.055  avg_2-20   58733.85  7341.73  131072   9.99    0.154    0.139    0.156    7.974    0.018   9.0  23.9  21.7
+17:58:28.000 Starting RD=run11; I/O rate: Uncontrolled MAX; elapsed=20; For loops: threads=10
+
+Sep 07, 2017  interval        i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue  cpu%  cpu%
+                             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth sys+u   sys
+17:58:29.004         1   40620.00  5077.50  131072   0.00    0.146    0.000    0.146    0.390    0.019   5.9  10.7   8.4
+17:58:30.046         2   60085.00  7510.63  131072   0.00    0.146    0.000    0.146    0.233    0.019   8.8  25.2  21.9
+17:58:31.043         3   60060.00  7507.50  131072   0.00    0.147    0.000    0.147    0.406    0.018   8.8  25.3  22.0
+17:58:32.044         4   59769.00  7471.13  131072   0.00    0.152    0.000    0.152    0.405    0.016   9.1  25.2  22.8
+17:58:33.046         5   59558.00  7444.75  131072   0.00    0.154    0.000    0.154    0.242    0.011   9.2  25.1  23.1
+17:58:34.046         6   59582.00  7447.75  131072   0.00    0.155    0.000    0.155    0.227    0.011   9.2  25.1  23.1
+17:58:35.042         7   59474.00  7434.25  131072   0.00    0.155    0.000    0.155    0.415    0.011   9.2  25.2  23.1
+17:58:36.042         8   59617.00  7452.13  131072   0.00    0.154    0.000    0.154    0.238    0.011   9.2  25.2  23.2
+17:58:37.043         9   59562.00  7445.25  131072   0.00    0.155    0.000    0.155    0.402    0.011   9.2  25.2  23.2
+17:58:38.043        10   59480.00  7435.00  131072   0.00    0.155    0.000    0.155    0.257    0.011   9.2  25.2  23.2
+17:58:39.046        11   59518.00  7439.75  131072   0.00    0.155    0.000    0.155    0.401    0.011   9.2  25.1  23.0
+17:58:40.044        12   59281.00  7410.13  131072   0.00    0.156    0.000    0.156    0.264    0.012   9.2  26.2  23.1
+17:58:41.042        13   59359.00  7419.88  131072   0.00    0.155    0.000    0.155    0.447    0.011   9.2  25.2  23.3
+17:58:42.047        14   62225.00  7778.13  131072   0.00    0.155    0.000    0.155    0.298    0.011   9.6  25.1  22.9
+17:58:43.043        15   56928.00  7116.00  131072   0.00    0.154    0.000    0.154    0.417    0.011   8.8  25.2  23.1
+17:58:44.042        16   59384.00  7423.00  131072   0.00    0.155    0.000    0.155    0.257    0.011   9.2  25.2  23.2
+17:58:45.046        17   59634.00  7454.25  131072   0.00    0.152    0.000    0.152    0.420    0.018   9.1  26.4  22.7
+17:58:46.043        18   59340.00  7417.50  131072   0.00    0.155    0.000    0.155    0.380    0.012   9.2  25.8  23.1
+17:58:47.043        19   59402.00  7425.25  131072   0.00    0.155    0.000    0.155    0.431    0.011   9.2  25.2  23.1
+17:58:48.046        20   59540.00  7442.50  131072   0.00    0.155    0.000    0.155    0.244    0.011   9.2  25.2  23.3
+17:58:48.050  avg_2-20   58620.90  7327.61  131072   0.00    0.153    0.000    0.153    0.447    0.013   9.0  23.9  21.6
+17:58:48.834 Vdbench execution completed successfully. Output directory: /home/lab/Tools/vdbench/output 
+

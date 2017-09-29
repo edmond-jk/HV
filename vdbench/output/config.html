@@ -1,0 +1,170 @@
+<title>Vdbench output/config.html</title><pre>
+08:52:25.841 config.sh command output:
+
+stdout: Fri Sep 29 08:52:25 PDT 2017
+stdout: >>>>>uname -a
+stdout: Linux HV_DEV1 4.8.0-rc1+ #8 SMP Thu Aug 31 17:09:08 EDT 2017 x86_64 x86_64 x86_64 GNU/Linux
+stdout: Fri Sep 29 08:52:25 PDT 2017
+stdout: >>>>>ifconfig -a
+stdout: eno1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+stdout:         ether 0c:c4:7a:57:f2:f4  txqueuelen 1000  (Ethernet)
+stdout:         RX packets 0  bytes 0 (0.0 B)
+stdout:         RX errors 0  dropped 0  overruns 0  frame 0
+stdout:         TX packets 0  bytes 0 (0.0 B)
+stdout:         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+stdout:         device memory 0xfb520000-fb53ffff  
+stdout: 
+stdout: eno2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+stdout:         inet 10.5.3.159  netmask 255.255.255.0  broadcast 10.5.3.255
+stdout:         inet6 fe80::3555:7cd9:6fc7:2e77  prefixlen 64  scopeid 0x20<link>
+stdout:         ether 0c:c4:7a:57:f2:f5  txqueuelen 1000  (Ethernet)
+stdout:         RX packets 328188  bytes 20317401 (19.3 MiB)
+stdout:         RX errors 0  dropped 0  overruns 0  frame 0
+stdout:         TX packets 611751  bytes 903676750 (861.8 MiB)
+stdout:         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+stdout:         device memory 0xfb500000-fb51ffff  
+stdout: 
+stdout: eno3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+stdout:         ether 0c:c4:7a:57:f2:f6  txqueuelen 1000  (Ethernet)
+stdout:         RX packets 0  bytes 0 (0.0 B)
+stdout:         RX errors 0  dropped 0  overruns 0  frame 0
+stdout:         TX packets 0  bytes 0 (0.0 B)
+stdout:         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+stdout:         device memory 0xfb420000-fb43ffff  
+stdout: 
+stdout: eno4: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+stdout:         ether 0c:c4:7a:57:f2:f7  txqueuelen 1000  (Ethernet)
+stdout:         RX packets 0  bytes 0 (0.0 B)
+stdout:         RX errors 0  dropped 0  overruns 0  frame 0
+stdout:         TX packets 0  bytes 0 (0.0 B)
+stdout:         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+stdout:         device memory 0xfb400000-fb41ffff  
+stdout: 
+stdout: lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+stdout:         inet 127.0.0.1  netmask 255.0.0.0
+stdout:         inet6 ::1  prefixlen 128  scopeid 0x10<host>
+stdout:         loop  txqueuelen 1  (Local Loopback)
+stdout:         RX packets 31677  bytes 877208722 (836.5 MiB)
+stdout:         RX errors 0  dropped 0  overruns 0  frame 0
+stdout:         TX packets 31677  bytes 877208722 (836.5 MiB)
+stdout:         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+stdout: 
+stdout: virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+stdout:         inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+stdout:         ether 52:54:00:4e:6e:a7  txqueuelen 1000  (Ethernet)
+stdout:         RX packets 0  bytes 0 (0.0 B)
+stdout:         RX errors 0  dropped 0  overruns 0  frame 0
+stdout:         TX packets 0  bytes 0 (0.0 B)
+stdout:         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+stdout: 
+stdout: virbr0-nic: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+stdout:         ether 52:54:00:4e:6e:a7  txqueuelen 1000  (Ethernet)
+stdout:         RX packets 0  bytes 0 (0.0 B)
+stdout:         RX errors 0  dropped 0  overruns 0  frame 0
+stdout:         TX packets 0  bytes 0 (0.0 B)
+stdout:         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+stdout: 
+stdout: Fri Sep 29 08:52:25 PDT 2017
+stdout: >>>>>id
+stdout: uid=0(root) gid=0(root) groups=0(root)
+stdout: Fri Sep 29 08:52:25 PDT 2017
+stdout: >>>>>mount
+stdout: sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+stdout: proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+stdout: devtmpfs on /dev type devtmpfs (rw,nosuid,size=1913048k,nr_inodes=478262,mode=755)
+stdout: securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+stdout: tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+stdout: devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+stdout: tmpfs on /run type tmpfs (rw,nosuid,nodev,mode=755)
+stdout: tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+stdout: cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+stdout: pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+stdout: cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+stdout: cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+stdout: cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+stdout: cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+stdout: cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+stdout: cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+stdout: cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+stdout: cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+stdout: cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+stdout: cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+stdout: configfs on /sys/kernel/config type configfs (rw,relatime)
+stdout: /dev/mapper/centos-root on / type xfs (rw,relatime,attr2,inode64,noquota)
+stdout: systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=25,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=14497)
+stdout: mqueue on /dev/mqueue type mqueue (rw,relatime)
+stdout: debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+stdout: hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime)
+stdout: nfsd on /proc/fs/nfsd type nfsd (rw,relatime)
+stdout: /dev/sda1 on /boot type xfs (rw,relatime,attr2,inode64,noquota)
+stdout: /dev/mapper/centos-home on /home type xfs (rw,relatime,attr2,inode64,noquota)
+stdout: sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+stdout: tmpfs on /run/user/42 type tmpfs (rw,nosuid,nodev,relatime,size=385908k,mode=700,uid=42,gid=42)
+stdout: tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=385908k,mode=700)
+stdout: fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+stdout: gvfsd-fuse on /run/user/0/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0)
+stdout: /dev/fuse on /run/user/0/doc type fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0)
+stdout: Fri Sep 29 08:52:25 PDT 2017
+stdout: >>>>>memory
+stdout: MemTotal:        3859080 kB
+stdout: MemFree:         2290624 kB
+stdout: MemAvailable:    2957400 kB
+stdout: Buffers:            2120 kB
+stdout: Cached:           531632 kB
+stdout: SwapCached:            0 kB
+stdout: Active:           283968 kB
+stdout: Inactive:        2880136 kB
+stdout: Active(anon):      21920 kB
+stdout: Inactive(anon):  2290624 kB
+stdout: Active(file):     262048 kB
+stdout: Inactive(file):   589512 kB
+stdout: Unevictable:      258400 kB
+stdout: Mlocked:               0 kB
+stdout: SwapTotal:       8126460 kB
+stdout: SwapFree:        8126460 kB
+stdout: Dirty:               252 kB
+stdout: Writeback:             0 kB
+stdout: AnonPages:        561736 kB
+stdout: Mapped:           185432 kB
+stdout: Shmem:             34284 kB
+stdout: Slab:             139780 kB
+stdout: SReclaimable:      47148 kB
+stdout: SUnreclaim:        92632 kB
+stdout: KernelStack:       19728 kB
+stdout: PageTables:        21692 kB
+stdout: NFS_Unstable:          0 kB
+stdout: Bounce:                0 kB
+stdout: WritebackTmp:          0 kB
+stdout: CommitLimit:    10056000 kB
+stdout: Committed_AS:    3698152 kB
+stdout: VmallocTotal:   34359738367 kB
+stdout: VmallocUsed:           0 kB
+stdout: VmallocChunk:          0 kB
+stdout: HardwareCorrupted:     0 kB
+stdout: AnonHugePages:    208896 kB
+stdout: ShmemHugePages:        0 kB
+stdout: ShmemPmdMapped:        0 kB
+stdout: HugePages_Total:       0
+stdout: HugePages_Free:        0
+stdout: HugePages_Rsvd:        0
+stdout: HugePages_Surp:        0
+stdout: Hugepagesize:       2048 kB
+stdout: DirectMap4k:      348728 kB
+stdout: DirectMap2M:     2680832 kB
+stdout: DirectMap1G:     3145728 kB
+stdout:               total        used        free      shared  buff/cache   available
+stdout: Mem:        3859080      895064     2290484       34284      673532     2957560
+stdout: Low:        3859080     1568596     2290484
+stdout: High:             0           0           0
+stdout: Swap:       8126460           0     8126460
+stdout: Fri Sep 29 08:52:25 PDT 2017
+stdout: >>>>>ps -ef | grep -i vdb
+stdout: root      5151  4532  0 08:52 pts/4    00:00:00 bash -c vdbench -m 2 -f run_vdbench >> test_log.txt
+stdout: root      5152  5151  0 08:52 pts/4    00:00:00 /bin/bash ./vdbench -m 2 -f run_vdbench
+stdout: root      5155  5152  0 08:52 pts/4    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -m 2 -f run_vdbench
+stdout: root      5211  5155  0 08:52 pts/4    00:00:00 /bin/bash /home/lab/Tools/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-170929-08.52.25.007 -l localhost-0 -p 5570
+stdout: root      5215  5211  0 08:52 pts/4    00:00:00 java -client -Xmx1024m -Xms128m -cp /home/lab/Tools/vdbench/:/home/lab/Tools/vdbench/classes:/home/lab/Tools/vdbench/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-170929-08.52.25.007 -l localhost-0 -p 5570
+stdout: root      5246  5155  0 08:52 pts/4    00:00:00 /bin/bash /home/lab/Tools/vdbench/vdbench SlaveJvm -m localhost -n localhost-11-170929-08.52.25.007 -l localhost-1 -p 5570
+stdout: root      5251  5246  0 08:52 pts/4    00:00:00 java -client -Xmx1024m -Xms128m -cp /home/lab/Tools/vdbench/:/home/lab/Tools/vdbench/classes:/home/lab/Tools/vdbench/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-11-170929-08.52.25.007 -l localhost-1 -p 5570
+stdout: root      5335  5155  0 08:52 pts/4    00:00:00 /bin/bash /home/lab/Tools/vdbench/linux/config.sh
+stdout: root      5351  5335  0 08:52 pts/4    00:00:00 grep -i vdb

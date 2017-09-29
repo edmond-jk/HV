@@ -1,0 +1,9 @@
+sd=sd1,lun=/dev/pmem0,openflags=o_direct
+wd=wd1,sd=sd1,xfersize=128k,rdpct=67,seekpct=random
+*rd=run7,wd=wd1,iorate=1,elapsed=30,interval=1,threads=1
+rd=run1,wd=wd1,iorate=max,elapsed=30,interval=1,threads=1
+rd=run2,wd=wd1,iorate=max,elapsed=30,interval=1,threads=2
+rd=run3,wd=wd1,iorate=max,elapsed=30,interval=1,threads=4
+rd=run4,wd=wd1,iorate=max,elapsed=30,interval=1,threads=8
+rd=run5,wd=wd1,iorate=max,elapsed=60,interval=1,threads=10
+
